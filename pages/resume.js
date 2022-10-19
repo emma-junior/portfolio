@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react'
+import {useEffect} from 'react'
 import Emma from '../components/Emma'
 import MyResume from '../components/MyResume'
 import { useGlobalContext } from '../hooks/context'

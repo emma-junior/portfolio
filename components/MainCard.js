@@ -17,8 +17,8 @@ const MainCard = ({project, boxheight}) => {
         <p className='text-[#777778] my-3 text-[15px]'>{project.desc}</p>
       </div>        
         <div className='flex space-x-4'>
-          <a href={project.live} target="_blank" className='text-[#ccc5c5] flex h-5 items-center hover:text-white'><AiOutlineEye className='mr-1' /> Live</a>
-          <a  href={project.github} target="_blank" className='text-[#ccc5c5] flex h-5 items-center hover:text-white'><FiShare2 className='mr-1' /> Code</a>
+          <a href={project.live} target="_blank" rel="noreferrer"  className='text-[#ccc5c5] flex h-5 items-center hover:text-white'><AiOutlineEye className='mr-1' /> Live</a>
+          <a  href={project.github} target="_blank" rel="noreferrer"  className='text-[#ccc5c5] flex h-5 items-center hover:text-white'><FiShare2 className='mr-1' /> Code</a>
         </div>
     </article>
   )
