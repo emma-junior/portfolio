@@ -6,7 +6,7 @@ import { useGlobalContext } from '../hooks/context'
 const articles = () => {
     const {setActive} = useGlobalContext()
     useEffect(() => {
-        setActive("article")
+        setActive("Article")
     }, [])
   return (
     <main className='flex bg-[#161616] min-h-screen'>
