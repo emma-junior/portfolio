@@ -3,7 +3,7 @@ import Emma from '../components/Emma'
 import MyResume from '../components/MyResume'
 import { useGlobalContext } from '../hooks/context'
 
-const resume = () => {
+const Resume = () => {
     const {setActive} = useGlobalContext()
     useEffect(() => {
         setActive("Resume")
@@ -18,4 +18,4 @@ const resume = () => {
   )
 }
 
-export default resume
+export default Resume

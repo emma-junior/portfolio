@@ -3,7 +3,7 @@ import Emma from '../components/Emma'
 import MyArticles from '../components/MyArticles'
 import { useGlobalContext } from '../hooks/context'
 
-const articles = () => {
+const Articles = () => {
     const {setActive} = useGlobalContext()
     useEffect(() => {
         setActive("Article")
@@ -18,4 +18,4 @@ const articles = () => {
   )
 }
 
-export default articles
+export default Articles
