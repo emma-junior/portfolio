@@ -10,7 +10,7 @@ const Projects = () => {
             {main.map((project) => <MainCard key={project.id} project={project} boxheight="h-52" />)}
         </div>
         <p className='font-semibold text-[#777778] mt-12 mb-5'>OTHERS</p>
-        <div className='grid grid-cols-2 gap-2'>
+        <div className='lg:grid grid-cols-2 gap-2'>
             {others.map((project) => <MainCard key={project.id} project={project} boxheight="h-72"/>)}
         </div>
     </>

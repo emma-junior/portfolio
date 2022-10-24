@@ -10,7 +10,7 @@ const MainCard = ({project, boxheight}) => {
   }
 
   return (
-    <article className={`bg-[#262627] ${boxheight} flex flex-col justify-between p-10 ${project.num === "even" && "translate-y-6"} relative hover:z-10 hover:shadow-[20px_5px_30px_10px_rgba(0,0,0,0.3)]  hover:scale-105 ${style.trans} `}>
+    <article className={`bg-[#262627] ${boxheight} flex flex-col justify-between my-3 p-10 ${project.num === "even" && "lg:translate-y-6"} relative hover:z-10 hover:shadow-[20px_5px_30px_10px_rgba(0,0,0,0.3)]  hover:scale-105 ${style.trans} `}>
       <div>
         <h2 className='text-2xl font-semibold text-white'>{project.title}</h2>
         {project.technologies.map((techs, index) => <span key={index} className='text-[#ccc5c5] text-[12px]'>{techs} {index < project.technologies.length - 1 ? " + " : ""}</span>)}
