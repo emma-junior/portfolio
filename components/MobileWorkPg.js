@@ -4,7 +4,7 @@ import { useGlobalContext } from '../hooks/context'
 import Dropdown from './Dropdown'
 import Projects from './Projects'
 
-const WorkPg = () => {
+const MobileWorkPg = () => {
     const {dropdown} = useGlobalContext()
   return (
     <div className='bg-[#151515] min-h-screen text-white'>
@@ -14,4 +14,4 @@ const WorkPg = () => {
   )
 }
 
-export default WorkPg
+export default MobileWorkPg

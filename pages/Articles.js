@@ -1,18 +1,9 @@
-import ArticlesPg from '../components/ArticlesPg'
-import MobileArticlesPg from '../components/MobileArticlesPg'
-import useWindowSize from '../hooks/useWindowSize'
+import ArticlesPg from "../components/page/ArticlesPg"
 
 const articles = () => {
-  const windowSize = useWindowSize()
   return (
     <main>
-      {
-        windowSize.width >= 768 ? (
-          <ArticlesPg />
-        ) : (
-          <MobileArticlesPg />
-        )
-      }
+      <ArticlesPg />
     </main>   
   )
 }

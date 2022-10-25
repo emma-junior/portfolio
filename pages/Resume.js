@@ -1,20 +1,11 @@
-import MobileResumePg from '../components/MobileResumePg'
-import ResumePg from '../components/ResumePg'
-import useWindowSize from '../hooks/useWindowSize'
+import ResumePg from "../components/page/ResumePg"
 
-const resume = () => {
-  const windowSize = useWindowSize()
+const Resume = () => {
   return (
     <main>
-      {
-        windowSize.width >= 768 ? (
-          <ResumePg />
-        ) : (
-          <MobileResumePg />
-        )
-      }
+      <ResumePg />
     </main>
   )
 }
 
-export default resume
+export default Resume

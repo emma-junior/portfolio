@@ -1,18 +1,9 @@
-import HomePg from '../components/HomePg'
-import WorkPg from '../components/WorkPg'
-import useWindowSize from '../hooks/useWindowSize'
+import WorkPg from "../components/page/WorkPg"
 
 const work = () => {
-    const windowSize = useWindowSize()
   return (
     <main>
-      {
-        windowSize.width >= 768 ? (
-          <HomePg />
-        ) : (
-          <WorkPg />
-        )
-      }
+      <WorkPg />
     </main> 
   )
 }

@@ -4,7 +4,7 @@ import ArticlesCard from './ArticlesCard'
 
 const MyArticles = () => {
   return (
-    <div>{articles.map((article) => <ArticlesCard article={article} />)}</div>
+    <div>{articles.map((article) => <ArticlesCard key={article.id} article={article} />)}</div>
   )
 }
 
