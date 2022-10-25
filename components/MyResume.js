@@ -37,7 +37,7 @@ const MyResume = () => {
       <Experience />
       <Skills />
       <h2 className='text-white text-[15px] font-medium mt-5 mb-3'>PROJECTS</h2>
-      <p className='text-[15px] text-[#777778]'>Links to my works can be found on <Link href="/Work" className=''><span className='text-white cursor-pointer'>emmatechy.vercel.app/Work</span></Link> and more details can be
+      <p className='text-[15px] text-[#777778]'>Links to my works can be found on <Link href="/Work" className=''><span className='text-white cursor-pointer'>emmatechy.vercel.app/work</span></Link> and more details can be
       provided upon request</p>
     </section>
   )

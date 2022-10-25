@@ -1,8 +1,10 @@
 import React from 'react'
+import { articles } from '../data/main'
+import ArticlesCard from './ArticlesCard'
 
 const MyArticles = () => {
   return (
-    <div>MyArticles</div>
+    <div>{articles.map((article) => <ArticlesCard article={article} />)}</div>
   )
 }
 

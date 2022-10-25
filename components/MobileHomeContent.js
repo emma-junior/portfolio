@@ -19,7 +19,7 @@ const MobileHomeContent = () => {
           <p href="https://www.linkedin.com/in/eze-emmanuel-355897237" target="_blank" rel="noreferrer" className='text-2xl cursor-pointer'><BsLinkedin /></p>
           <p href='mailto:emma.c.techy@gmail.com ' className='text-2xl cursor-pointer'><FaAt /></p>
         </div>
-        <p href='https://www.sarahdayan.dev/' target="_blank" rel="noreferrer" className='text-[#777778] text-xs my-4 text-center'>Inspired by <a className='text-white cursor-pointer'>Sarah Dayan</a></p>
+        <p className='text-[#777778] text-xs my-4 text-center'>Inspired by <a href='https://www.sarahdayan.dev/' target="_blank" rel="noreferrer" className='text-white cursor-pointer'>Sarah Dayan</a></p>
     </div>
   )
 }

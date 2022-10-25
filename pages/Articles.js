@@ -1,21 +1,20 @@
-import {useEffect} from 'react'
-import Emma from '../components/Emma'
-import MyArticles from '../components/MyArticles'
-import { useGlobalContext } from '../hooks/context'
+import ArticlesPg from '../components/ArticlesPg'
+import MobileArticlesPg from '../components/MobileArticlesPg'
+import useWindowSize from '../hooks/useWindowSize'
 
-const Articles = () => {
-    const {setActive} = useGlobalContext()
-    useEffect(() => {
-        setActive("Article")
-    }, [])
+const articles = () => {
+  const windowSize = useWindowSize()
   return (
-    <main className='flex bg-[#161616] min-h-screen'>
-        <span className='w-4/12 m-auto'><Emma /></span>
-        <span className='w-5/12 my-20 mx-auto'>
-          <MyArticles />
-        </span>
-    </main>  
+    <main>
+      {
+        windowSize.width >= 768 ? (
+          <ArticlesPg />
+        ) : (
+          <MobileArticlesPg />
+        )
+      }
+    </main>   
   )
 }
 
-export default Articles
+export default articles

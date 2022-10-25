@@ -10,9 +10,9 @@ const Emma = () => {
       <h2 className="text-[47px] font-semibold font-monospace leading-[50px] text-white">Hello, I am Emmanuel Eze</h2>
       <Bio />
       <div className='space-y-5 my-12'>
-        <Section num="00" type="Work" />
-        <Section num="01" type="Resume" />
-        <Section num="02" type="Articles" />
+        <Section num="00" type="work" />
+        <Section num="01" type="resume" />
+        <Section num="02" type="articles" />
       </div>
       <Socials />
       <p href='https://www.sarahdayan.dev/' target="_blank" rel="noreferrer" className='text-[#777778] text-xs my-6'>Inspired by <a className='text-white cursor-pointer'>Sarah Dayan</a></p>

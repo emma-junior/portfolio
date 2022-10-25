@@ -55,3 +55,13 @@ export const others = [
         num: "even"
     },
 ]
+
+export const articles = [
+    {
+        id: 1,
+        title: "Beginners Guide to Coding",
+        date: "October 25, 2022",
+        duration: "3 mins read",
+        url: "https://emmanuel-eze.hashnode.dev/beginners-guide-to-coding"
+    }
+]

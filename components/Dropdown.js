@@ -13,9 +13,9 @@ const Dropdown = () => {
         transition={{ type: "spring", duration: 1, }}>
             <ul className='text-center my-8 space-y-6 text-[#777778]'>
                 <Link href="/"><li onClick={() => setDropdown(false)} className='text-2xl cursor-pointer hover:text-white'>Home</li></Link>
-                <Link href="/Work"><li onClick={() => setDropdown(false)} className='text-2xl cursor-pointer hover:text-white'>Work</li></Link>
-                <li className='text-2xl cursor-pointer hover:text-white'>Articles</li>
-                <li className='text-2xl cursor-pointer hover:text-white'>Resume</li>
+                <Link href="/work"><li onClick={() => setDropdown(false)} className='text-2xl cursor-pointer hover:text-white'>Work</li></Link>
+                <Link href="/articles"><li onClick={() => setDropdown(false)} className='text-2xl cursor-pointer hover:text-white'>Articles</li></Link>
+                <Link href="/resume"><li onClick={() => setDropdown(false)} className='text-2xl cursor-pointer hover:text-white'>Resume</li></Link>
             </ul>
             <div className=''>
                 <h2 className='text-center text-2xl mb-6'>Connect With Me</h2>
