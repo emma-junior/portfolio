@@ -24,10 +24,10 @@ const MyResume = () => {
   return (
     <section className='bg-[#262627] p-7'>
       <div className='text-white flex w-full justify-between'>
-        <h2 className='text-3xl'>EMMANUEL EZE</h2>
+        <h2 className='lg:text-3xl text-2xl'>EMMANUEL EZE</h2>
         <div className='flex space-x-2'>
-          <a className='flex h-5 items-center text-xs cursor-pointer' href="https://www.linkedin.com/in/eze-emmanuel-355897237" target="_blank" rel="noreferrer"><BsLinkedin />Linkedin</a>
-          <p className='flex h-5 items-center text-xs cursor-pointer' onClick={download}><FaDownload />Download</p>
+          <a className='flex h-7 lg:h-5 items-center text-xs cursor-pointer' href="https://www.linkedin.com/in/eze-emmanuel-355897237" target="_blank" rel="noreferrer"><BsLinkedin className='text-xl lg:text-xs' /><p className='hidden lg:block'>Linkedin</p></a>
+          <div className='flex h-7 lg:h-5 items-center text-xs cursor-pointer' onClick={download}><FaDownload className='text-xl lg:text-xs' /><p className='hidden lg:block'>Download</p></div>
         </div>
       </div>
       <h2 className='text-[#dad8d8]'>Frontend Developer</h2>
@@ -37,7 +37,7 @@ const MyResume = () => {
       <Experience />
       <Skills />
       <h2 className='text-white text-[15px] font-medium mt-5 mb-3'>PROJECTS</h2>
-      <p className='text-[15px] text-[#777778]'>Links to my works can be found on <Link href="/Work" className=''><span className='text-white cursor-pointer'>emmatechy.vercel.app/work</span></Link> and more details can be
+      <p className='text-[15px] text-[#777778]'>Links to my works can be found on <Link href="/work" className=''><span className='text-white cursor-pointer'>emmatechy.vercel.app/work</span></Link> and more details can be
       provided upon request</p>
     </section>
   )

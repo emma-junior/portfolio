@@ -5,13 +5,13 @@ const Experience = () => {
     const experience = [
         {
             company: "Kobo 360",
-            role: "Frontend developer[Intern]",
+            role: "Frontend developer [Intern]",
             date: "FEBRUARY 2022 - PRESENT",
             description: "I joined Kobo 360 as a frontend developer intern, while learning new skills I'm also collaborating with other developers in building amazing features, maintaining existing features and in general ensuring a seamless usage of tech with logistics."
         },
         {
             company: "Afiari Technologies",
-            role: "Frontend developer[Intern]",
+            role: "Frontend developer [Intern]",
             date: "DECEMBER 2021 - MARCH 2022",
             description: "I worked closely with a senior engineer to develop the user interfaces for a sophisticated ecommerce web application. During such time i contributed in building complex layouts and components, and also managed app state with Redux and React redux."
         }
