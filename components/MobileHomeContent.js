@@ -13,7 +13,7 @@ const MobileHomeContent = () => {
         <div className='w-32 mx-auto mt-16 mb-4'><Image className='rounded-full' src={me} alt="" /></div>
         <h2 className="text-3xl font-meduim text-center text-white">Hello, I am Emmanuel Eze.</h2>
         <div className='text-center'><Bio /></div>
-        <Link href="/Work">< button className='flex bg-[#1b1b1d] h-12 w-32 justify-between items-center px-6 text-base mx-auto rounded-md'>Explore <BsFillCaretRightFill /></button></Link>
+        <Link href="/work">< button className='flex bg-[#1b1b1d] h-12 w-32 justify-between items-center px-6 text-base mx-auto rounded-md'>Explore <BsFillCaretRightFill /></button></Link>
         <div className='flex space-x-4 w-full justify-center mt-7'>
           <a href='https://github.com/emma-junior' target="_blank" rel="noreferrer" className='text-2xl cursor-pointer'><BsGithub /></a>
           <p href="https://www.linkedin.com/in/eze-emmanuel-355897237" target="_blank" rel="noreferrer" className='text-2xl cursor-pointer'><BsLinkedin /></p>
