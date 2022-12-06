@@ -13,7 +13,7 @@ const MobileHomeContent = () => {
         <Image className="rounded-full" src={me} alt="" />
       </div>
       <h2 className="text-3xl font-meduim text-center text-white">
-        Hello, I'm Emmanuel Eze.
+        Hello, I&apos;m Emmanuel Eze.
       </h2>
       <div className="text-center">
         <Bio />
@@ -48,7 +48,7 @@ const MobileHomeContent = () => {
         </p>
       </div>
       <p className="text-[#777778] text-xs my-4 text-center">
-        Inspired by{" "}
+        Inspired by
         <a
           href="https://www.sarahdayan.dev/"
           target="_blank"

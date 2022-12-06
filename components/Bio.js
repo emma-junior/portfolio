@@ -4,9 +4,9 @@ const Bio = () => {
   return (
     <div>
       <p className="text-[#777778] my-6 text-[15px]">
-        I'm a <span className="text-white">frontend developer</span>. I create
-        interactive experiences for amazing people using modern
-        <span className="text-white">web technology</span>. I'm currently
+        I&apos;m a <span className="text-white">frontend developer</span>. I
+        create interactive experiences for amazing people using modern
+        <span className="text-white">web technology</span>. I&apos;m currently
         learning how to write immersive web
         <span className="text-white">animations</span> and also exploring
         <span className="text-white">backend</span> development

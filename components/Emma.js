@@ -7,7 +7,7 @@ const Emma = () => {
   return (
     <section className="fixed top-20 w-4/12">
       <h2 className="text-[47px] font-semibold font-monospace leading-[50px] text-white">
-        Hello, I'm Emmanuel Eze
+        Hello, I&apos;m Emmanuel Eze
       </h2>
       <Bio />
       <div className="space-y-5 my-12">
@@ -17,7 +17,7 @@ const Emma = () => {
       </div>
       <Socials />
       <p className="text-[#777778] text-xs my-6">
-        Inspired by{" "}
+        Inspired by
         <a
           href="https://www.sarahdayan.dev/"
           target="_blank"
