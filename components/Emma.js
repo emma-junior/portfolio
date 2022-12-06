@@ -17,7 +17,7 @@ const Emma = () => {
       </div>
       <Socials />
       <p className="text-[#777778] text-xs my-6">
-        Inspired by
+        Inspired by&nbsp;
         <a
           href="https://www.sarahdayan.dev/"
           target="_blank"

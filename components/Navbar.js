@@ -1,6 +1,4 @@
 import React from "react";
-// import { RiBarChartHorizontalLine } from "react-icons/ri";
-// import { FaTimes } from "react-icons/fa";
 import { useGlobalContext } from "../hooks/context";
 import Navbtn from "./navbtn/Navbtn";
 
