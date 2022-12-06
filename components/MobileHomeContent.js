@@ -48,7 +48,7 @@ const MobileHomeContent = () => {
         </p>
       </div>
       <p className="text-[#777778] text-xs my-4 text-center">
-        Inspired by
+        Inspired by&nbsp;
         <a
           href="https://www.sarahdayan.dev/"
           target="_blank"
