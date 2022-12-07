@@ -3,33 +3,26 @@ button {
     border: none ;
 }
 
-/* button one */
-
-.button-one {
+.button-three {
     --button-color: #fff;
+    overflow: hidden;
 }
 
-.button-one .line {
-    transition: y 300ms ease-in 300ms, rotate 300ms ease-in, opacity 0ms 300ms;
-    transform-origin: center;
+.button-three .hamburger {
+    transition: translate 1s, rotate 1s;
 }
 
-.button-one[aria-expanded="true"] .line {
-    transition: y 300ms ease-in, rotate 300ms ease-in 300ms, opacity 0ms 300ms;
+.button-three[aria-expanded="true"] .hamburger {
+    translate: 10px -10px;
+    rotate: 0.125turn;
 }
 
-.button-one[aria-expanded="true"] :is(.top, .bottom) {
-    y: 33;
+.button-three .line {
+    transition: 1s;
+    stroke-dasharray: 60 31 60 300;
 }
 
-.button-one[aria-expanded="true"] .top {
-    rotate: 45deg;
-}
-
-.button-one[aria-expanded="true"] .middle {
-    opacity: 0;
-}
-
-.button-one[aria-expanded="true"] .bottom {
-    rotate: -45deg;
+.button-three[aria-expanded="true"] .line {
+    stroke-dasharray: 60 105 60 300;
+    stroke-dashoffset: -90;
 }

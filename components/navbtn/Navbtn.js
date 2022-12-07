@@ -5,40 +5,24 @@ const Navbtn = () => {
   const { dropdown } = useGlobalContext();
   return (
     <button
-      className="button-one"
+      class="button-three"
       aria-controls="primary-navigation"
       aria-expanded={dropdown}
     >
       <svg
-        fill="var(--button-color)"
-        className="hamburger"
-        viewBox="0 0 80 70"
-        width="45"
+        stroke="var(--button-color)"
+        fill="none"
+        class="hamburger"
+        viewBox="-10 -10 120 120"
+        width="50"
       >
-        <rect
-          className="line top"
-          width="60"
-          height="5"
-          x="10"
-          y="10"
-          rx="5"
-        ></rect>
-        <rect
-          className="line middle"
-          width="60"
-          height="5"
-          x="10"
-          y="30"
-          rx="5"
-        ></rect>
-        <rect
-          className="line bottom"
-          width="60"
-          height="5"
-          x="10"
-          y="50"
-          rx="5"
-        ></rect>
+        <path
+          class="line"
+          stroke-width="10"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="m 20 40 h 60 a 1 1 0 0 1 0 20 h -60 a 1 1 0 0 1 0 -40 h 30 v 70"
+        ></path>
       </svg>
     </button>
   );
