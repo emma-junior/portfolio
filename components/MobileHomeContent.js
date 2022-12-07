@@ -28,7 +28,7 @@ const MobileHomeContent = () => {
           href="https://github.com/emma-junior"
           target="_blank"
           rel="noreferrer"
-          className="text-2xl cursor-pointer"
+          className="text-xl cursor-pointer"
         >
           <BsGithub />
         </a>
@@ -36,13 +36,13 @@ const MobileHomeContent = () => {
           href="https://www.linkedin.com/in/eze-emmanuel-355897237"
           target="_blank"
           rel="noreferrer"
-          className="text-2xl cursor-pointer"
+          className="text-xl cursor-pointer"
         >
           <BsLinkedin />
         </p>
         <p
           href="mailto:emma.c.techy@gmail.com "
-          className="text-2xl cursor-pointer"
+          className="text-xl cursor-pointer"
         >
           <FaAt />
         </p>
