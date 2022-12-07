@@ -13,7 +13,7 @@ const MobileHomeContent = () => {
         <Image className="rounded-full" src={me} alt="" />
       </div>
       <h2 className="text-3xl font-meduim text-center text-white">
-        Hello, I&apos;m Emmanuel Eze.
+        Hi, I&apos;m Emmanuel Eze.
       </h2>
       <div className="text-center">
         <Bio />
