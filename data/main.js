@@ -2,7 +2,14 @@ export const main = [
   {
     id: 1,
     title: "SneakersVille",
-    technologies: ["REACT", "TYPESCRIPT", "REDUX", "SASS"],
+    technologies: [
+      "REACT",
+      "TYPESCRIPT",
+      "REDUX",
+      "SASS",
+      "EXPRESS",
+      "MONGO DB",
+    ],
     desc: "An Ecommerce App for sneakers",
     live: "https://sneakersvilleapp.vercel.app/",
     github: "https://github.com/emma-junior/sneakersvilleapp",

@@ -7,7 +7,7 @@ const Experience = () => {
       role: "Frontend developer [Intern]",
       date: "FEBRUARY 2022 - NOVEMBER 2022",
       description:
-        "I joined Kobo 360 as a frontend developer intern, while learning new skills I also collaborated with other developers in building amazing features, maintaining existing features and contributed in TDD and BDD software testing.",
+        "I joined Kobo 360 as a frontend developer intern, while learning new skills I also collaborated with other developers in building amazing features, maintained existing features and contributed in TDD and BDD software testing.",
     },
     {
       company: "Afiari Technologies",
