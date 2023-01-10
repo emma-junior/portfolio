@@ -44,7 +44,7 @@ const MyResume = () => {
           </div>
         </div>
         <h2 className="text-[#dad8d8]">Frontend Developer</h2>
-        <p className="text-[15px] my-5 text-[#777778]">
+        <p className="my-5 text-[#777778]">
           I’m a dedicated and highly motivated frontend software developer with
           2+ years of experience in Front-End development. I’m passionate about
           web development, thus the reason for my ever increasing desire to keep

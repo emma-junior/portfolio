@@ -26,12 +26,12 @@ const Experience = () => {
           return (
             <div key={index}>
               <div className="my-3">
-                <h2 className="text-[#dad8d8]">
+                <h2 className="text-[#dad8d8] ">
                   {exp.company} - {exp.role}
                 </h2>
                 <p className="text-[#777778] text-xs">{exp.date}</p>
               </div>
-              <p className="text-[#777778]">{exp.description}</p>
+              <p className="text-[#777778] ">{exp.description}</p>
             </div>
           );
         })}
