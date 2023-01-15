@@ -1,11 +1,11 @@
-import ArticlesPg from "../components/page/ArticlesPg"
+import MyArticles from "../components/MyArticles";
 
 const articles = () => {
   return (
     <main>
-      <ArticlesPg />
-    </main>   
-  )
-}
+      <MyArticles />
+    </main>
+  );
+};
 
-export default articles
+export default articles;

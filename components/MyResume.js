@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import axios from "axios";
 import fileDownload from "js-file-download";
 import { BsLinkedin } from "react-icons/bs";
@@ -6,8 +6,14 @@ import { FaDownload } from "react-icons/fa";
 import Experience from "./Experience";
 import Skills from "./Skills";
 import Link from "next/link";
+import { useGlobalContext } from "../hooks/context";
 
 const MyResume = () => {
+  const { setActive } = useGlobalContext();
+  useEffect(() => {
+    setActive("resume");
+  }, []);
+
   const download = () => {
     axios({
       url: "https://emma-resume-download.onrender.com",
@@ -20,7 +26,7 @@ const MyResume = () => {
   };
 
   return (
-    <section className="lg:pt-20 lg:mx-10 lg:pb-28 lg:fixed lg:overflow-y-scroll lg:h-full scroll">
+    <section className="lg:pt-20 mx-5 py-5 lg:mx-16 lg:pb-28 lg:fixed lg:overflow-y-scroll lg:h-full scroll">
       <section className="bg-[#262627] p-7 ">
         <div className="text-white flex w-full justify-between">
           <h2 className="lg:text-3xl text-2xl">EMMANUEL EZE</h2>
