@@ -1,11 +1,11 @@
-import WorkPg from "../components/page/WorkPg"
+import Projects from "../components/Projects";
 
 const work = () => {
   return (
     <main>
-      <WorkPg />
-    </main> 
-  )
-}
+      <Projects />
+    </main>
+  );
+};
 
-export default work
+export default work;

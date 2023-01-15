@@ -1,9 +1,9 @@
-import ResumePg from "../components/page/ResumePg";
+import MyResume from "../components/MyResume";
 
 const Resume = () => {
   return (
     <main>
-      <ResumePg />
+      <MyResume />
     </main>
   );
 };
