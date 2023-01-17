@@ -54,13 +54,22 @@ export const others = [
   },
   {
     id: 4,
-    title: "Sneakers Hub",
-    technologies: ["REACT", "TAILWIND"],
-    desc: "An Ecommerce App for sneakers",
-    live: "https://sneakers-hub.netlify.app/",
-    github: "https://github.com/emma-junior/sneakers-hub",
+    title: "EmmaTechy",
+    technologies: ["NEXTJS", "TAILWIND"],
+    desc: "My portfolio site",
+    live: "http://emmatechy.vercel.app/",
+    github: "https://github.com/emma-junior/portfolio",
     num: "even",
   },
+  // {
+  //   id: 4,
+  //   title: "Sneakers Hub",
+  //   technologies: ["REACT", "TAILWIND"],
+  //   desc: "An Ecommerce App for sneakers",
+  //   live: "https://sneakers-hub.netlify.app/",
+  //   github: "https://github.com/emma-junior/sneakers-hub",
+  //   num: "even",
+  // },
 ];
 
 export const articles = [
