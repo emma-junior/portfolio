@@ -52,9 +52,10 @@ const MyResume = () => {
         <h2 className="text-[#dad8d8]">Frontend Developer</h2>
         <p className="my-5 text-[#777778]">
           I’m a dedicated and highly motivated frontend software developer with
-          2+ years of experience in Front-End development. I’m passionate about
-          web development, thus the reason for my ever increasing desire to keep
-          on learning and improving in such a field.
+          3+ years of experience in Front-End development. I’m a detail-oriented
+          individual with excellent communication and interpersonal skills. I’m
+          constantly seeking to learn and grow, and i’m excited about staying
+          up-to-date with the latest trends and best practices in the industry.
         </p>
         <Experience />
         <Skills />
