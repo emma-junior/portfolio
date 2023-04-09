@@ -1,11 +1,16 @@
 import Head from "next/head";
-import React from "react";
+import React, { useRef } from "react";
 import Dropdown from "./Dropdown";
 import Navbar from "./Navbar";
 import { useGlobalContext } from "../hooks/context";
 
 const MobileLayout = ({ children }) => {
-  const { dropdown } = useGlobalContext();
+  const { dropdown, setDropdown } = useGlobalContext();
+  const hamBurger = useRef();
+  const showMenu = () => {
+    setDropdown(!dropdown);
+    hamBurger.current.classList.toggle("hamburger_active");
+  };
   return (
     <>
       <Head>
@@ -14,8 +19,8 @@ const MobileLayout = ({ children }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="bg-[#151515] min-h-screen text-white">
-        <Navbar />
-        {!dropdown ? <div>{children}</div> : <Dropdown />}
+        <Navbar showMenu={showMenu} hamBurger={hamBurger} />
+        {!dropdown ? <div>{children}</div> : <Dropdown showMenu={showMenu} />}
       </div>
     </>
   );

@@ -3,11 +3,8 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { FaAt } from "react-icons/fa";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { useGlobalContext } from "../hooks/context";
 
-const Dropdown = () => {
-  const { dropdown, setDropdown } = useGlobalContext();
-  console.log(dropdown);
+const Dropdown = ({ showMenu }) => {
   return (
     <motion.div
       className=""
@@ -17,7 +14,7 @@ const Dropdown = () => {
       <ul className="text-center my-8 space-y-6 text-[#777778]">
         <Link href="/">
           <li
-            onClick={() => setDropdown(false)}
+            onClick={showMenu}
             className="text-2xl cursor-pointer hover:text-white"
           >
             Home
@@ -25,7 +22,7 @@ const Dropdown = () => {
         </Link>
         <Link href="/work">
           <li
-            onClick={() => setDropdown(false)}
+            onClick={showMenu}
             className="text-2xl cursor-pointer hover:text-white"
           >
             Work
@@ -33,7 +30,7 @@ const Dropdown = () => {
         </Link>
         <Link href="/articles">
           <li
-            onClick={() => setDropdown(false)}
+            onClick={showMenu}
             className="text-2xl cursor-pointer hover:text-white"
           >
             Articles
@@ -41,7 +38,7 @@ const Dropdown = () => {
         </Link>
         <Link href="/resume">
           <li
-            onClick={() => setDropdown(false)}
+            onClick={showMenu}
             className="text-2xl cursor-pointer hover:text-white"
           >
             Resume
