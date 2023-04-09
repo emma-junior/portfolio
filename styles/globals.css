@@ -31,3 +31,13 @@ a {
     background: black;
   }
 }
+
+/* Mobile navbar hamburger */
+.hamburger_active::before {
+  transform: translateY(7px) rotate(45deg);
+  background-color: white;
+}
+.hamburger_active::after {
+  background-color: white;
+  transform: translateY(-3px) rotate(-45deg);
+}
