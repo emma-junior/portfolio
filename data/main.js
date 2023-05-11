@@ -36,11 +36,11 @@ export const others = [
   },
   {
     id: 2,
-    title: "Mercury Homes",
-    technologies: ["REACT", "TAILWIND"],
-    desc: "UI for a real estate website",
-    live: "https://mercury-homes.netlify.app/",
-    github: "https://github.com/emma-junior/real-estate",
+    title: "Drive",
+    technologies: ["NEXTJS", "TYPESCRIPT", "SASS", "Gsap"],
+    desc: "Landing page for a technological(Hardware) company",
+    live: "https://drive-olive.vercel.app/",
+    github: "https://github.com/emma-junior/drive",
     num: "even",
   },
   {
