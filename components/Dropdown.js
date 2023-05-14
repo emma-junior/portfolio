@@ -1,16 +1,15 @@
-import React from "react";
-import { BsGithub, BsLinkedin } from "react-icons/bs";
-import { FaAt } from "react-icons/fa";
+import React, { useEffect } from "react";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { links } from "../data/main";
 
 const Dropdown = ({ showMenu }) => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
-    <motion.div
-      className=""
-      animate={{ y: 40 }}
-      transition={{ type: "spring", duration: 1 }}
-    >
+    <div className="" data-aos="fade-down">
       <ul className="text-center my-8 space-y-6 text-[#777778]">
         <Link href="/">
           <li
@@ -48,18 +47,24 @@ const Dropdown = ({ showMenu }) => {
       <div className="">
         <h2 className="text-center text-xl mb-6">Connect With Me</h2>
         <div className="flex space-x-3 w-full justify-center text-xl text-[#777778]">
-          <p>
-            <BsGithub />
-          </p>
-          <p>
-            <BsLinkedin />
-          </p>
-          <p>
-            <FaAt />
-          </p>
+          {links.map((link, index) => {
+            return (
+              <>
+                <a
+                  href={link.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-xl cursor-pointer"
+                  key={index}
+                >
+                  {link.icon}
+                </a>
+              </>
+            );
+          })}
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

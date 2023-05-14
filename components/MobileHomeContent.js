@@ -2,9 +2,9 @@ import React from "react";
 import Image from "next/image";
 import me from "../assets/photo.jpg";
 import Bio from "./Bio";
-import { BsFillCaretRightFill, BsGithub, BsLinkedin } from "react-icons/bs";
-import { FaAt } from "react-icons/fa";
+import { BsFillCaretRightFill } from "react-icons/bs";
 import Link from "next/link";
+import { links } from "../data/main";
 
 const MobileHomeContent = () => {
   return (
@@ -24,28 +24,21 @@ const MobileHomeContent = () => {
         </button>
       </Link>
       <div className="flex space-x-4 w-full justify-center mt-7">
-        <a
-          href="https://github.com/emma-junior"
-          target="_blank"
-          rel="noreferrer"
-          className="text-xl cursor-pointer"
-        >
-          <BsGithub />
-        </a>
-        <p
-          href="https://www.linkedin.com/in/eze-emmanuel-355897237"
-          target="_blank"
-          rel="noreferrer"
-          className="text-xl cursor-pointer"
-        >
-          <BsLinkedin />
-        </p>
-        <p
-          href="mailto:emma.c.techy@gmail.com "
-          className="text-xl cursor-pointer"
-        >
-          <FaAt />
-        </p>
+        {links.map((link, index) => {
+          return (
+            <>
+              <a
+                href={link.url}
+                target="_blank"
+                rel="noreferrer"
+                className="text-xl cursor-pointer"
+                key={index}
+              >
+                {link.icon}
+              </a>
+            </>
+          );
+        })}
       </div>
       <p className="text-[#777778] text-xs my-4 text-center">
         Inspired by&nbsp;

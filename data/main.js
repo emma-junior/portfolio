@@ -1,3 +1,6 @@
+import { BsGithub, BsLinkedin } from "react-icons/bs";
+import { FaAt } from "react-icons/fa";
+
 export const main = [
   {
     id: 1,
@@ -95,5 +98,21 @@ export const experience = [
     date: "DECEMBER 2021 - MARCH 2022",
     description:
       "I worked closely with a senior engineer to develop the user interfaces for a sophisticated ecommerce web application. During such time i contributed in building complex layouts and components, and also managed app state with Redux and React redux.",
+  },
+];
+
+//links
+export const links = [
+  {
+    url: "https://github.com/emma-junior",
+    icon: <BsGithub />,
+  },
+  {
+    url: "https://www.linkedin.com/in/eze-emmanuel-355897237",
+    icon: <BsLinkedin />,
+  },
+  {
+    url: "mailto:emma.c.techy@gmail.com",
+    icon: <FaAt />,
   },
 ];
