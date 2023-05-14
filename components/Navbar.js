@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const Navbar = ({ showMenu, hamBurger }) => {
   const style = {
@@ -9,7 +10,9 @@ const Navbar = ({ showMenu, hamBurger }) => {
 
   return (
     <div className="flex w-10/12 justify-between mx-auto h-16 items-center">
-      <h2 className="text-[28px] font-medium">E.E</h2>
+      <Link href="/">
+        <h2 className="text-[28px] font-medium cursor-pointer">E.E</h2>
+      </Link>
       <p onClick={showMenu} className=" mt-2 cursor-pointer">
         <button
           className={`${style.btn} transition ease-in-out duration-300`}
