@@ -32,16 +32,14 @@ export const others = [
     desc: "An application where developers can find jobs with ease",
     live: "https://dev-jobs-beta.vercel.app/",
     github: "https://github.com/emma-junior/dev-jobs",
-    num: "odd",
   },
   {
     id: 2,
     title: "Drive",
-    technologies: ["NEXTJS", "TYPESCRIPT", "SASS", "Gsap"],
+    technologies: ["NEXTJS", "TYPESCRIPT", "SASS", "GSAP"],
     desc: "Landing page for a technological(Hardware) company",
     live: "https://drive-olive.vercel.app/",
     github: "https://github.com/emma-junior/drive",
-    num: "even",
   },
   {
     id: 3,
@@ -50,7 +48,6 @@ export const others = [
     desc: "Landing page for a medical company",
     live: "https://trafalgar-services.netlify.app/",
     github: "https://github.com/emma-junior/trafalgar",
-    num: "odd",
   },
   {
     id: 4,
@@ -59,7 +56,6 @@ export const others = [
     desc: "My portfolio site",
     live: "http://emmatechy.vercel.app/",
     github: "https://github.com/emma-junior/portfolio",
-    num: "even",
   },
 ];
 
