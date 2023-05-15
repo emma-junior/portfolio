@@ -41,3 +41,26 @@ a {
   background-color: white;
   transform: translateY(-3px) rotate(-45deg);
 }
+
+
+@layer utilities {
+  .sectionactive {
+    @apply text-white flex cursor-pointer  duration-200 ease-in 
+  }
+  .section {
+    @apply text-[#777778] flex cursor-pointer hover:text-white duration-200 ease-in 
+  }
+  .line {
+    @apply h-[1px] bg-[#777778] w-12 my-auto mx-3 hover:bg-white transition-width
+  }
+    .sectionactive>.line {
+      @apply bg-white w-16 transition-width
+    }
+  .section:hover > .line {
+    @apply bg-white w-16 transition-width
+  }
+  .line:focus {
+    @apply bg-white w-16 
+  }
+  
+}
