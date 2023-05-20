@@ -35,7 +35,6 @@ export const getStaticPaths = async () => {
   };
 };
 export const getStaticProps = async (context) => {
-  console.log(context);
   const id = context.params.id;
   const client = new ApolloClient({
     uri: "https://api.hashnode.com/",
