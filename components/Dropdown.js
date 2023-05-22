@@ -9,7 +9,7 @@ const Dropdown = ({ showMenu }) => {
     Aos.init({ duration: 1000 });
   }, []);
   return (
-    <div className="" data-aos="fade-down">
+    <div className="mt-4 md:mt-32" data-aos="fade-down">
       <ul className="text-center my-8 space-y-6 text-[#777778]">
         <Link href="/">
           <li

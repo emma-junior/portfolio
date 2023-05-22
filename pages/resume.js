@@ -1,10 +1,11 @@
 import MyResume from "../components/MyResume";
+import Layout from "../layout/Layout";
 
 const Resume = () => {
   return (
-    <main>
+    <Layout>
       <MyResume />
-    </main>
+    </Layout>
   );
 };
 

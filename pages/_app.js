@@ -8,15 +8,15 @@ function MyApp({ Component, pageProps }) {
   const windowSize = useWindowSize();
   return (
     <AppProvider>
-      {windowSize.width > 768 ? (
-        <DesktopLayout>
-          <Component {...pageProps} />
-        </DesktopLayout>
+      {/* {windowSize.width > 768 ? (
+        <DesktopLayout> */}
+      <Component {...pageProps} />
+      {/* </DesktopLayout>
       ) : (
         <MobileLayout>
           <Component {...pageProps} />
         </MobileLayout>
-      )}
+      )} */}
     </AppProvider>
   );
 }

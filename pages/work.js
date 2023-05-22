@@ -1,10 +1,11 @@
 import Projects from "../components/Projects";
+import Layout from "../layout/Layout";
 
 const work = () => {
   return (
-    <main>
+    <Layout>
       <Projects />
-    </main>
+    </Layout>
   );
 };
 

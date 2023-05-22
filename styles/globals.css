@@ -9,6 +9,8 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Lato', sans-serif;
+  color: white;
+    background: black;
 }
 
 a {
@@ -62,5 +64,17 @@ a {
   .line:focus {
     @apply bg-white w-16 
   }
+  .content ol {
+    @apply py-2
+  }
+  .content ol>li{
+    @apply py-2
+  }
   
+}
+
+@media (max-width: 993px) {
+    .desk_layout {
+      display: none;
+    }
 }
