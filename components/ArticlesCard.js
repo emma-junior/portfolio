@@ -18,6 +18,7 @@ const ArticlesCard = ({ article }) => {
     <a
       href="https://emmanuel-eze.hashnode.dev/beginners-guide-to-coding"
       target="_blank"
+      rel="noreferrer"
       className="bg-[#262627] flex flex-col justify-between h-52 my-3 p-10 cursor-pointer hover:scale-105 transition duration-500"
     >
       <div>
