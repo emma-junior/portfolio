@@ -1,5 +1,6 @@
 import React from "react";
 import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
+import HashnodeContent from "../../helper/HashnodeContent";
 
 export const getStaticPaths = async () => {
   const client = new ApolloClient({
@@ -36,53 +37,51 @@ export const getStaticPaths = async () => {
 };
 export const getStaticProps = async (context) => {
   const id = context.params.id;
-  const client = new ApolloClient({
-    uri: "https://api.hashnode.com/",
-    cache: new InMemoryCache(),
-  });
+  try {
+    const client = new ApolloClient({
+      uri: "https://api.hashnode.com/",
+      cache: new InMemoryCache(),
+    });
 
-  const { data } = await client.query({
-    query: gql`
-      query GetUserById($id: String!) {
-        post(slug: $id, hostname: "emmanuel-eze.hashnode.dev") {
-          title
-          slug
+    const { data } = await client.query({
+      query: gql`
+        query GetUserById($id: String!) {
+          post(slug: $id, hostname: "emmanuel-eze.hashnode.dev") {
+            title
+            slug
+            content
+            contentMarkdown
+          }
         }
-      }
-    `,
-    variables: {
-      id: id,
-    },
-  });
+      `,
+      variables: {
+        id: id,
+      },
+    });
 
-  return {
-    props: {
-      post: data.post,
-    },
-  };
+    return {
+      props: {
+        post: data.post,
+      },
+    };
+  } catch (error) {
+    return {
+      props: {
+        error: error.message,
+      },
+    };
+  }
 };
+
 const article = ({ post }) => {
   return !post ? (
     <div className="text-white h-[90vh] grid place-items-center">
       Loading...
     </div>
   ) : (
-    <div className="text-white h-[90vh] grid place-items-center">
-      <h3>
-        Apologies, this page is under construction.
-        <br />
-        Please check back tomorrow
-        <br />
-        But you can you can also read through{" "}
-        <a
-          href="https://emmanuel-eze.hashnode.dev/beginners-guide-to-coding"
-          target="_blank"
-          rel="noreferrer"
-          className="text-blue-500 cursor-pointer"
-        >
-          HERE
-        </a>
-      </h3>
+    <div className="">
+      <h2>{post.title}</h2>
+      <HashnodeContent content={post?.contentMarkdown} />
     </div>
   );
 };

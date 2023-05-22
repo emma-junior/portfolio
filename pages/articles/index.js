@@ -1,6 +1,7 @@
 import ArticlesCard from "../../components/ArticlesCard";
 import MyArticles from "../../components/MyArticles";
 import { ApolloClient, InMemoryCache, gql, useQuery } from "@apollo/client";
+import Layout from "../../layout/Layout";
 
 const articles = ({ posts, error }) => {
   console.log("error", error);
@@ -10,7 +11,9 @@ const articles = ({ posts, error }) => {
     </div>
   ) : (
     <div className="lg:mx-2">
-      <MyArticles posts={posts} />
+      <Layout>
+        <MyArticles posts={posts} />
+      </Layout>
     </div>
   );
 };
