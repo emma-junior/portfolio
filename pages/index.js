@@ -1,4 +1,3 @@
-import useWindowSize from "../hooks/useWindowSize";
 import Projects from "../components/Projects";
 import Layout from "../layout/Layout";
 
