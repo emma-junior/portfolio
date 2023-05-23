@@ -9,7 +9,7 @@ const Projects = () => {
     setActive("work");
   }, []);
   return (
-    <div className="lg:fixed lg:overflow-y-scroll lg:h-full mx-5 lg:mx-10 lg:py-20 lg:px-6 scroll ">
+    <div className="lg:fixed left-[45%] lg:overflow-y-scroll lg:h-full mx-5 lg:mx-10 lg:py-20 lg:px-6 lg:w-inherit scroll ">
       <p className="font-semibold text-[#777778] my-5">FEATURED</p>
       <div className="grid grid-cols-1 gap-2">
         {main.map((project) => (

@@ -26,7 +26,7 @@ const MyResume = () => {
   };
 
   return (
-    <section className="lg:pt-20 mx-5 py-5 lg:mx-16 lg:pb-28 lg:fixed lg:overflow-y-scroll lg:h-full scroll">
+    <section className="lg:pt-20 mx-5 py-5 lg:mx-16 lg:pb-28 lg:fixed left-[45%] lg:w-inherit lg:overflow-y-scroll lg:h-full scroll">
       <section className="bg-[#262627] md:p-7 p-3 ">
         <div className="text-white flex w-full justify-between">
           <h2 className="lg:text-3xl text-2xl">EMMANUEL EZE</h2>

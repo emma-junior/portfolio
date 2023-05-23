@@ -9,7 +9,7 @@ const MyArticles = ({ posts }) => {
     setActive("articles");
   }, []);
   return (
-    <div className="mx-5 py-5 lg:mx-10 lg:py-20">
+    <div className="mx-5 py-5 lg:py-20">
       {posts?.map((article) => (
         <ArticlesCard key={article._id} article={article} />
       ))}

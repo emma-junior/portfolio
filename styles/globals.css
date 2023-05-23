@@ -73,6 +73,10 @@ a {
   
 }
 
+/* .desk_layout {
+  width: 75%;
+} */
+
 @media (max-width: 993px) {
     .desk_layout {
       display: none;

@@ -10,7 +10,7 @@ const articles = ({ posts, error }) => {
       Loading...
     </div>
   ) : (
-    <div className="lg:mx-2">
+    <div className="">
       <Layout>
         <MyArticles posts={posts} />
       </Layout>

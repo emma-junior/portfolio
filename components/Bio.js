@@ -16,7 +16,7 @@ const Bio = () => {
   }, []);
   const { dropdown } = useGlobalContext();
   return (
-    <div className="">
+    <div className="lg:mt-[70px] lg:ml-12">
       <div
         className={`flex flex-col items-center justify-center md:h-[80vh] h-[70vh] lg:h-full ${
           dropdown ? "hidden" : "block"
@@ -30,8 +30,8 @@ const Bio = () => {
             Hello, I&apos;m Emmanuel Eze.
           </h2>
         </div>
-        <div className="lg:pr-[15%] flex text-center lg:text-left md:px-10 px-4 lg:px-0 py-1 lg:py-0 sm:justify-center">
-          <p className="text-[#777778] lg:my-6 my-0 text-[15px]">
+        <div className="lg:pr-[5%] flex text-center lg:text-left md:px-10 px-4 lg:px-0 py-1 lg:py-0 ">
+          <p className="text-[#777778] lg:my-3 my-0 text-[15px]">
             I&apos;m a{" "}
             <span data-aos="zoom-in" className="text-white">
               frontend developer
