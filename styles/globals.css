@@ -77,7 +77,7 @@ a {
   width: 75%;
 } */
 
-@media (max-width: 993px) {
+@media (max-width: 1023px) {
     .desk_layout {
       display: none;
     }
