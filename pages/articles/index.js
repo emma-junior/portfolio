@@ -5,7 +5,7 @@ import { ApolloClient, InMemoryCache, gql, useQuery } from "@apollo/client";
 import Layout from "../../layout/Layout";
 
 const articles = ({ posts, error }) => {
-  console.log("error", error);
+  console.log("posts", posts);
   return (
     <>
       <Head>

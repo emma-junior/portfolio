@@ -13,7 +13,7 @@ const Navbar = ({ showMenu, hamBurger }) => {
       <Link href="/">
         <h2 className="text-[28px] font-medium cursor-pointer">E.E</h2>
       </Link>
-      <p onClick={showMenu} className=" mt-2 cursor-pointer">
+      <p onClick={showMenu} className="cursor-pointer">
         <button
           className={`${style.btn} transition ease-in-out duration-300`}
           ref={hamBurger}

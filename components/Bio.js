@@ -16,7 +16,7 @@ const Bio = () => {
   }, []);
   const { dropdown } = useGlobalContext();
   return (
-    <div className="lg:mt-[70px] lg:ml-12">
+    <div className="lg:mt-[70px] lg:ml-12 mb-10 lg:mb-0">
       <div
         className={`flex flex-col items-center justify-center md:h-[80vh] h-[70vh] lg:h-full ${
           dropdown ? "hidden" : "block"
