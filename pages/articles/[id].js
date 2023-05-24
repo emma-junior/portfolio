@@ -1,6 +1,13 @@
 import React from "react";
 import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
 import HashnodeContent from "../../helper/HashnodeContent";
+import Image from "next/image";
+import back from "../../assets/arrow.svg";
+import { BsCalendar3 } from "react-icons/bs";
+import { BiTimeFive } from "react-icons/bi";
+import Link from "next/link";
+import Header from "../../components/Header";
+const readingTime = require("reading-time");
 
 export const getStaticPaths = async () => {
   const client = new ApolloClient({
@@ -49,7 +56,7 @@ export const getStaticProps = async (context) => {
           post(slug: $id, hostname: "emmanuel-eze.hashnode.dev") {
             title
             slug
-            content
+            dateAdded
             contentMarkdown
           }
         }
@@ -74,14 +81,47 @@ export const getStaticProps = async (context) => {
 };
 
 const article = ({ post }) => {
+  const dateString = post.dateAdded;
+  const date = new Date(dateString);
+  const options = {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  };
+  const readtime = readingTime(post.contentMarkdown);
+
   return !post ? (
     <div className="text-white h-[90vh] grid place-items-center">
       Loading...
     </div>
   ) : (
-    <div className="">
-      <h2>{post.title}</h2>
-      <HashnodeContent content={post?.contentMarkdown} />
+    <div>
+      <div className="lg:hidden">
+        <Header />
+      </div>
+      <div className="lg:w-[70%] w-[90%] mx-auto my-12">
+        <Link href="/articles">
+          <Image
+            className="cursor-pointer"
+            src={back}
+            width={80}
+            height={40}
+            alt=""
+          />
+        </Link>
+        <div className="flex space-x-5 my-6 text-[#777778]">
+          <p className="flex items-center text-sm">
+            <BsCalendar3 className="mr-1" />
+            {date.toLocaleString("en-US", options)}
+          </p>
+          <p className="flex items-center text-sm">
+            <BiTimeFive className="mr-1" />
+            {readtime.text}
+          </p>
+        </div>
+        <h1 className="text-3xl mb-16">{post.title}.</h1>
+        <HashnodeContent content={post?.contentMarkdown} />
+      </div>
     </div>
   );
 };

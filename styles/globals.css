@@ -10,7 +10,7 @@ body {
   margin: 0;
   font-family: 'Lato', sans-serif;
   color: white;
-    background: black;
+  background: black;
 }
 
 a {
@@ -20,6 +20,9 @@ a {
 
 * {
   box-sizing: border-box;
+}
+body::-webkit-scrollbar {
+  display: none;
 }
 .scroll::-webkit-scrollbar {
   display: none;
@@ -64,6 +67,9 @@ a {
   .line:focus {
     @apply bg-white w-16 
   }
+  .content p {
+    @apply text-[#777778] tracking-wide text-lg my-2 leading-loose;
+  }
   .content ol {
     @apply py-2
   }
@@ -73,9 +79,6 @@ a {
   
 }
 
-/* .desk_layout {
-  width: 75%;
-} */
 
 @media (max-width: 1023px) {
     .desk_layout {

@@ -27,7 +27,7 @@ const MyResume = () => {
 
   return (
     <section className="lg:pt-20 mx-5 py-5 lg:mx-16 lg:pb-28 lg:fixed left-[45%] lg:w-inherit lg:overflow-y-scroll lg:h-full scroll">
-      <section className="bg-[#262627] md:p-7 p-3 ">
+      <section className="bg-[#1b1b1d] text-[#777778] md:p-7 px-4 py-7 tracking-wide text-lg leading-relaxed ">
         <div className="text-white flex w-full justify-between">
           <h2 className="lg:text-3xl text-2xl">EMMANUEL EZE</h2>
           <div className="flex space-x-2">
@@ -50,7 +50,7 @@ const MyResume = () => {
           </div>
         </div>
         <h2 className="text-[#dad8d8]">Frontend Developer</h2>
-        <p className="my-5 text-[#777778]">
+        <p className="my-5">
           I’m a dedicated and highly motivated frontend software developer with
           2+ years of experience in Front-End development. I’m a detail-oriented
           individual with excellent communication and interpersonal skills. I’m
@@ -62,7 +62,7 @@ const MyResume = () => {
         <h2 className="text-white text-[15px] font-medium mt-5 mb-3">
           PROJECTS
         </h2>
-        <p className="text-[15px] text-[#777778]">
+        <p className="text-[15px]">
           Links to my works can be found on{" "}
           <Link href="/work" className="">
             <span className="text-white cursor-pointer">

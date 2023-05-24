@@ -8,11 +8,21 @@ const MyArticles = ({ posts }) => {
   useEffect(() => {
     setActive("articles");
   }, []);
+  const arraytwo = [
+    { tags: ["beginners", "coding"] },
+    { tags: ["javascript"] },
+  ];
   return (
-    <div className="mx-5 py-5 lg:py-20">
-      {posts?.map((article) => (
-        <ArticlesCard key={article._id} article={article} />
-      ))}
+    <div className="lg:fixed left-[45%] lg:overflow-y-scroll lg:h-full mx-5 lg:mx-10 lg:py-20 lg:px-6 lg:w-inherit scroll ">
+      <p className="font-semibold text-[#777778] my-5">ARTICLES</p>
+      <div className="grid grid-cols-1 gap-2">
+        {posts?.map((article, index) => {
+          const combine = arraytwo[index];
+          return (
+            <ArticlesCard key={index} article={article} combine={combine} />
+          );
+        })}
+      </div>
     </div>
   );
 };
