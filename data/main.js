@@ -55,7 +55,7 @@ export const others = [
   {
     id: 4,
     title: "EmmaTechy",
-    technologies: ["NEXTJS", "TAILWIND"],
+    technologies: ["NEXTJS", "TAILWIND", "GRAPHQL"],
     desc: "My portfolio site",
     live: "http://emmatechy.vercel.app/",
     github: "https://github.com/emma-junior/portfolio",
