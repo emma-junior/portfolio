@@ -132,7 +132,6 @@ const article = ({ post }) => {
           </div>
         </div>
       )}
-      ;
     </>
   );
 };
