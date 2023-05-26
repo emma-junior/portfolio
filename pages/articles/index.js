@@ -40,7 +40,7 @@ export async function getStaticProps() {
         query GetUserArticles {
           user(username: "emmanuel31") {
             publication {
-              posts(page: 0) {
+              posts {
                 _id
                 title
                 dateAdded
