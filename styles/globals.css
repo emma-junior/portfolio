@@ -74,7 +74,7 @@ body::-webkit-scrollbar {
     @apply py-2
   }
   .content ol>li{
-    @apply py-2
+    @apply py-2 list-decimal text-[#777778]
   }
   
 }
