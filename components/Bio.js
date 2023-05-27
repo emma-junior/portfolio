@@ -18,11 +18,12 @@ const Bio = () => {
   const [cursorY, setCursorY] = useState();
 
   useEffect(() => {
+    Aos.init({ duration: 3000 });
     window.addEventListener("mousemove", (e) => {
       setCursorX(e.pageX);
       setCursorY(e.pageY);
     });
-  });
+  }, []);
   const { dropdown } = useGlobalContext();
   return (
     <div className="lg:mt-[70px] lg:ml-12 mb-10 lg:mb-0">
