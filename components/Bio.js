@@ -26,7 +26,7 @@ const Bio = () => {
           <div className="lg:hidden w-32 mx-auto mt-16 mb-4 ">
             <Image className="rounded-full" src={me} alt="" />
           </div>
-          <h2 className="text-3xl font-meduim text-center lg:text-left lg:text-[47px] lg:font-semibold lg:font-monospace lg:leading-[50px] text-white">
+          <h2 className="text-2xl font-meduim text-center lg:text-left lg:text-[47px] lg:font-semibold lg:font-monospace lg:leading-[50px] text-white">
             Hello, I&apos;m Emmanuel Eze.
           </h2>
         </div>

@@ -27,12 +27,12 @@ const Dropdown = ({ showMenu }) => {
             Work
           </li>
         </Link>
-        <Link href="/articles">
+        <Link href="/blog">
           <li
             onClick={showMenu}
             className="text-2xl cursor-pointer hover:text-white"
           >
-            Articles
+            Blog
           </li>
         </Link>
         <Link href="/resume">

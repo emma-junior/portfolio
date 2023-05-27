@@ -14,18 +14,20 @@ const ArticlesCard = ({ article, combine }) => {
   const readtime = readingTime(article.contentMarkdown);
   return (
     <Link href="/blog/[id]" as={`/blog/${article.slug}`}>
-      <article className="bg-[#1b1b1d] flex flex-col justify-between md:mx-5 lg:mx-0 h-52 min-h-full my-3 p-10 cursor-pointer hover:scale-105 transition duration-500">
+      <article className="bg-[#1b1b1d] flex flex-col justify-between md:mx-5 lg:mx-0 h-96 min-h-full my-3 p-10 cursor-pointer hover:scale-105 transition duration-500 lg:even:translate-y-6">
+        {/* <div> */}
+        <p className="text-[#777778] text-sm">
+          {date.toLocaleString("en-US", options)}
+        </p>
+        {/* </div> */}
         <div>
-          <h2 className="md:text-2xl text-xl font-semibold text-white">
+          <h2 className="text-xl font-mono font-semibold text-white">
             {article.title}
           </h2>
-          <p className="text-[#777778] text-[16px]">
-            {date.toLocaleString("en-US", options)}
+          <p className="text-[#777778] mt-5 text-sm flex h-2 items-center">
+            <BiTimeFive className="mr-1" /> {readtime.text}
           </p>
         </div>
-        <p className="text-[#777778] text-sm flex h-2 items-center">
-          <BiTimeFive className="mr-1" /> {readtime.text}
-        </p>
       </article>
     </Link>
   );
