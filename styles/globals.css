@@ -81,7 +81,15 @@ body::-webkit-scrollbar {
   .content ol>li{
     @apply py-2 list-decimal text-[#777778]
   }
-  
+  .container {
+    @apply invisible
+  }
+  .container > * {
+    @apply visible
+  }
+  .container:hover> :not(:hover) {
+    @apply opacity-50
+  }
 }
 
 

@@ -3,14 +3,9 @@ import { AiOutlineEye } from "react-icons/ai";
 import { FiShare2 } from "react-icons/fi";
 
 const MainCard = ({ project, boxheight }) => {
-  const style = {
-    shadow: "shadow-[3px_0px_20px_rgba(0, 0, 0, 0.04)]",
-    trans: "transition duration-500",
-  };
-
   return (
     <article
-      className={`bg-[#1b1b1d] ${boxheight} min-h-full flex flex-col justify-between my-3 lg:my-0 p-10 lg:even:translate-y-6 relative hover:z-10 hover:shadow-[3px_0px_20px_rgba(0, 0, 0, 0.04)]  hover:scale-105 ${style.trans} `}
+      className={`bg-[#1b1b1d] ${boxheight} min-h-full flex flex-col justify-between my-3 lg:my-0 p-10 lg:even:translate-y-6 relative hover:z-10 cursor-default  hover:scale-105 transition duration-500 `}
     >
       <div>
         <h2 className="text-2xl font-semibold text-white">{project.title}</h2>
