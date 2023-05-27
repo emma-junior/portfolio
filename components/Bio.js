@@ -11,9 +11,6 @@ import { useGlobalContext } from "../hooks/context";
 import MobileSocials from "./MobileSocials";
 
 const Bio = () => {
-  // useEffect(() => {
-  //   Aos.init({ duration: 3000 });
-  // }, []);
   const [cursorX, setCursorX] = useState();
   const [cursorY, setCursorY] = useState();
 
