@@ -13,7 +13,7 @@ const MyArticles = ({ posts }) => {
     { tags: ["javascript"] },
   ];
   return (
-    <div className="lg:fixed left-[45%] lg:overflow-y-scroll lg:h-full mx-5 lg:mx-10 lg:py-20 lg:px-6 lg:w-inherit scroll ">
+    <div className="lg:fixed left-[45%] lg:overflow-y-scroll lg:h-full mx-5 lg:mx-10 lg:py-20 pb-10 lg:px-6 lg:w-inherit scroll ">
       <p className="font-semibold text-[#777778] my-5">ARTICLES</p>
       <div className="grid grid-cols-1 gap-2">
         {posts?.map((article, index) => {
