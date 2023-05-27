@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Image from "next/image";
@@ -11,9 +11,18 @@ import { useGlobalContext } from "../hooks/context";
 import MobileSocials from "./MobileSocials";
 
 const Bio = () => {
+  // useEffect(() => {
+  //   Aos.init({ duration: 3000 });
+  // }, []);
+  const [cursorX, setCursorX] = useState();
+  const [cursorY, setCursorY] = useState();
+
   useEffect(() => {
-    Aos.init({ duration: 3000 });
-  }, []);
+    window.addEventListener("mousemove", (e) => {
+      setCursorX(e.pageX);
+      setCursorY(e.pageY);
+    });
+  });
   const { dropdown } = useGlobalContext();
   return (
     <div className="lg:mt-[70px] lg:ml-12 mb-10 lg:mb-0">
@@ -64,6 +73,13 @@ const Bio = () => {
         <Section num="00" type="work" />
         <Section num="01" type="blog" />
         <Section num="02" type="resume" />
+        <div
+          className="absolute left-3 w-[6px] h-[6px] bg-white rounded-full pointer-events-none z-20"
+          style={{
+            left: cursorX + "px",
+            top: cursorY + "px",
+          }}
+        ></div>
       </div>
       <div className="hidden lg:block">
         <Socials />
