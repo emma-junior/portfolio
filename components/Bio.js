@@ -62,8 +62,8 @@ const Bio = () => {
       </div>
       <div className="hidden lg:block space-y-5 my-12">
         <Section num="00" type="work" />
-        <Section num="01" type="resume" />
-        <Section num="02" type="articles" />
+        <Section num="01" type="blog" />
+        <Section num="02" type="resume" />
       </div>
       <div className="hidden lg:block">
         <Socials />

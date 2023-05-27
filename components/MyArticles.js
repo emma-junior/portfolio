@@ -6,7 +6,7 @@ import { useGlobalContext } from "../hooks/context";
 const MyArticles = ({ posts }) => {
   const { setActive } = useGlobalContext();
   useEffect(() => {
-    setActive("articles");
+    setActive("blog");
   }, []);
   const arraytwo = [
     { tags: ["beginners", "coding"] },

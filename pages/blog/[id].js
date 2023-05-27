@@ -107,7 +107,7 @@ const article = ({ post }) => {
             <Header />
           </div>
           <div className="lg:w-[70%] w-[90%] mx-auto my-12">
-            <Link href="/articles">
+            <Link href="/blog">
               <Image
                 className="cursor-pointer"
                 src={back}

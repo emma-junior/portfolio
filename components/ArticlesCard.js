@@ -13,7 +13,7 @@ const ArticlesCard = ({ article, combine }) => {
   };
   const readtime = readingTime(article.contentMarkdown);
   return (
-    <Link href="/articles/[id]" as={`/articles/${article.slug}`}>
+    <Link href="/blog/[id]" as={`/blog/${article.slug}`}>
       <article className="bg-[#1b1b1d] flex flex-col justify-between md:mx-5 lg:mx-0 h-52 min-h-full my-3 p-10 cursor-pointer hover:scale-105 transition duration-500">
         <div>
           <h2 className="md:text-2xl text-xl font-semibold text-white">
