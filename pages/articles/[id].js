@@ -24,7 +24,6 @@ export const getStaticPaths = async () => {
             posts(page: 0) {
               _id
               title
-              brief
               slug
             }
           }

@@ -70,6 +70,12 @@ body::-webkit-scrollbar {
   .content p {
     @apply text-[#777778] tracking-wide text-lg my-2 leading-loose;
   }
+  .content h3 {
+    @apply text-2xl mt-10
+  }
+  .content pre {
+    @apply bg-[#1b1b1d] py-10 px-8 my-2 overflow-x-auto rounded-md
+  }
   .content ol {
     @apply py-2
   }

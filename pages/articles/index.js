@@ -1,11 +1,9 @@
 import Head from "next/head";
-import ArticlesCard from "../../components/ArticlesCard";
 import MyArticles from "../../components/MyArticles";
 import { ApolloClient, InMemoryCache, gql, useQuery } from "@apollo/client";
 import Layout from "../../layout/Layout";
 
 const articles = ({ posts, error }) => {
-  console.log("posts", posts);
   return (
     <>
       <Head>
@@ -45,7 +43,7 @@ export async function getStaticProps() {
                 title
                 dateAdded
                 slug
-                brief
+                contentMarkdown
               }
             }
           }
