@@ -30,19 +30,19 @@ export const main = [
 export const others = [
   {
     id: 1,
-    title: "Dev Jobs",
-    technologies: ["NEXTJS", "TAILWIND", "CONTEXT API"],
-    desc: "An application where developers can find jobs with ease",
-    live: "https://dev-jobs-beta.vercel.app/",
-    github: "https://github.com/emma-junior/dev-jobs",
-  },
-  {
-    id: 2,
     title: "Drive",
     technologies: ["NEXTJS", "TYPESCRIPT", "SASS", "GSAP"],
     desc: "Landing page for a technological(Hardware) company",
     live: "https://drive-olive.vercel.app/",
     github: "https://github.com/emma-junior/drive",
+  },
+  {
+    id: 2,
+    title: "Dev Jobs",
+    technologies: ["NEXTJS", "TAILWIND", "CONTEXT API"],
+    desc: "An application where developers can find jobs with ease",
+    live: "https://dev-jobs-beta.vercel.app/",
+    github: "https://github.com/emma-junior/dev-jobs",
   },
   {
     id: 3,
