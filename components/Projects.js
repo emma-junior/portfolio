@@ -11,7 +11,7 @@ const Projects = () => {
   return (
     <div className="lg:fixed left-[45%] lg:overflow-y-scroll lg:h-full mx-5 lg:mx-10 lg:py-20 lg:px-6 lg:w-inherit scroll ">
       <p className="font-semibold text-[#777778] my-5">FEATURED</p>
-      <div className="grid grid-cols-1 gap-2 container">
+      <div className="grid grid-cols-1 lg:gap-1 gap-3 container">
         {main.map((project) => (
           <MainCard key={project.id} project={project} boxheight="h-52" />
         ))}

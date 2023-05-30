@@ -66,6 +66,15 @@ body::-webkit-scrollbar {
   .line:focus {
     @apply bg-white w-16 
   }
+  .container {
+    @apply invisible
+  }
+  .container>* {
+    @apply visible
+  }  
+  .container:hover> :not(:hover) {
+    @apply opacity-50
+  }
   .content p {
     @apply text-[#777778] tracking-wide text-lg my-2 leading-loose;
   }
@@ -73,7 +82,7 @@ body::-webkit-scrollbar {
     @apply text-2xl mt-10
   }
   .content pre {
-    @apply bg-[#1b1b1d] py-10 px-8 my-2 overflow-x-auto rounded-md
+    @apply relative
   }
   .content ol {
     @apply py-2
@@ -81,17 +90,10 @@ body::-webkit-scrollbar {
   .content ol>li{
     @apply py-2 list-decimal text-[#777778]
   }
-  .container {
-    @apply invisible
-  }
-  .container > * {
-    @apply visible
-  }
-  .container:hover> :not(:hover) {
-    @apply opacity-50
+  .content .copy-code {
+    @apply absolute bg-[#b3b3b34f] py-1 px-3 cursor-pointer rounded-md top-4 right-4
   }
 }
-
 
 @media (max-width: 1023px) {
     .desk_layout {
