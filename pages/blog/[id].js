@@ -90,26 +90,26 @@ const article = ({ post }) => {
   };
   const readtime = readingTime(post.contentMarkdown);
 
-  useEffect(() => {
-    document.querySelectorAll("pre").forEach((el) => {
-      // create copy button
-      if (!el.querySelector(".copy-code")) {
-        const button = document.createElement("button");
-        button.innerText = "Copy";
-        button.classList.add("copy-code");
-        button.onclick = () => {
-          const code = el.innerText;
-          navigator.clipboard.writeText(code);
-          button.innerText = "Copied!";
-          setTimeout(() => {
-            button.innerText = "Copy";
-          }, 2000);
-        };
+  // useEffect(() => {
+  //   document.querySelectorAll("pre").forEach((el) => {
+  //     // create copy button
+  //     if (!el.querySelector(".copy-code")) {
+  //       const button = document.createElement("button");
+  //       button.innerText = "Copy";
+  //       button.classList.add("copy-code");
+  //       button.onclick = () => {
+  //         const code = el.innerText;
+  //         navigator.clipboard.writeText(code);
+  //         button.innerText = "Copied!";
+  //         setTimeout(() => {
+  //           button.innerText = "Copy";
+  //         }, 2000);
+  //       };
 
-        el.prepend(button);
-      }
-    });
-  }, [post]);
+  //       el.prepend(button);
+  //     }
+  //   });
+  // }, [post]);
 
   return (
     <>
