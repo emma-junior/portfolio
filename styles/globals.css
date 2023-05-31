@@ -82,7 +82,7 @@ body::-webkit-scrollbar {
     @apply text-2xl mt-10
   }
   .content pre {
-    @apply relative overflow-auto
+    @apply relative my-3 overflow-auto
   }
   .content ol {
     @apply py-2
