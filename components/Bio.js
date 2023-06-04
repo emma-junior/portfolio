@@ -33,27 +33,27 @@ const Bio = () => {
           <div className="lg:hidden w-32 mx-auto mt-16 mb-4 ">
             <Image className="rounded-full" src={me} alt="" />
           </div>
-          <h2 className="text-2xl font-meduim text-center lg:text-left lg:text-[47px] lg:font-semibold lg:font-monospace lg:leading-[50px] text-white">
+          <h2 className="text-2xl font-bold text-center lg:text-left lg:text-[52px]  lg:font-monospace lg:leading-[50px] gradientText">
             Hello, I&apos;m Emmanuel Eze.
           </h2>
         </div>
         <div className="lg:pr-[5%] flex text-center lg:text-left md:px-10 px-4 lg:px-0 py-1 lg:py-0 ">
           <p className="text-[#777778] lg:my-3 my-0 text-[15px]">
             I&apos;m a{" "}
-            <span data-aos="zoom-in" className="text-white">
+            <span data-aos="zoom-in" className="gradientText text-[16px]">
               frontend developer
             </span>
             . I create interactive experiences for amazing people using
             modern&nbsp;
-            <span data-aos="zoom-in" className="text-white">
+            <span data-aos="zoom-in" className="gradientText text-[16px]">
               web technology
             </span>
             . I&apos;m currently learning how to write immersive web&nbsp;
-            <span data-aos="zoom-in" className="text-white">
+            <span data-aos="zoom-in" className="gradientText text-[16px]">
               animations
             </span>{" "}
             and also exploring&nbsp;
-            <span data-aos="zoom-in" className="text-white">
+            <span data-aos="zoom-in" className="gradientText text-[16px]">
               backend
             </span>{" "}
             development
