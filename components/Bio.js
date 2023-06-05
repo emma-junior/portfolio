@@ -96,15 +96,7 @@ const Bio = () => {
         <MobileSocials />
       </div>
       <p className="text-[#777778] text-xs my-4 text-center lg:text-left">
-        Inspired by&nbsp;
-        <a
-          href="https://www.sarahdayan.dev/"
-          target="_blank"
-          rel="noreferrer"
-          className="text-white cursor-pointer"
-        >
-          Sarah Dayan
-        </a>
+        Inspired by <span className="text-white">kadetXx</span>
       </p>
     </div>
   );
