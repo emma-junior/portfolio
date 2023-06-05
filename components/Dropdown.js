@@ -35,14 +35,14 @@ const Dropdown = ({ showMenu }) => {
             Blog
           </li>
         </Link>
-        <Link href="/resume">
-          <li
-            onClick={showMenu}
-            className="text-2xl cursor-pointer hover:text-white"
-          >
-            Resume
-          </li>
-        </Link>
+        <li
+          onClick={showMenu}
+          className="text-2xl cursor-pointer hover:text-white"
+        >
+          <a href="/files/resume.pdf" target="_blanket" rel="noopener">
+            Résumé
+          </a>
+        </li>
       </ul>
       <div className="">
         <h2 className="text-center text-xl mb-6">Connect With Me</h2>

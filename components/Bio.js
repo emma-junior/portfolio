@@ -70,7 +70,17 @@ const Bio = () => {
       <div className="hidden lg:block space-y-5 my-12">
         <Section num="00" type="work" />
         <Section num="01" type="blog" />
-        <Section num="02" type="resume" />
+        {/* <Section num="02" type="resume" /> */}
+        <a
+          href="/files/resume.pdf"
+          target="_blanket"
+          rel="noopener"
+          className="section"
+        >
+          <h2 className="text-xs">02</h2>
+          <p className="line"></p>
+          <h2 className="text-xs">RÉSUMÉ</h2>
+        </a>
         <div
           className="absolute left-3 w-[6px] h-[6px] bg-white rounded-full pointer-events-none z-20"
           style={{
