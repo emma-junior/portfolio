@@ -19,7 +19,7 @@ const ArticlesCard = ({ article }) => {
           {date.toLocaleString("en-US", options)}
         </p>
         <div>
-          <h2 className="text-xl font-mono font-semibold text-white">
+          <h2 className="text-xl font-mono font-semibold gradientText">
             {article.title}
           </h2>
           <p className="text-[#777778] mt-5 text-sm flex h-2 items-center">
