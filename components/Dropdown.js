@@ -11,33 +11,27 @@ const Dropdown = ({ showMenu }) => {
   return (
     <div className="mt-4 md:mt-32" data-aos="fade-down">
       <ul className="text-center my-8 space-y-6 text-[#777778]">
-        <Link href="/">
-          <li
-            onClick={showMenu}
-            className="text-2xl cursor-pointer hover:text-white"
-          >
-            Home
-          </li>
-        </Link>
-        <Link href="/work">
-          <li
-            onClick={showMenu}
-            className="text-2xl cursor-pointer hover:text-white"
-          >
-            Work
-          </li>
-        </Link>
-        <Link href="/blog">
-          <li
-            onClick={showMenu}
-            className="text-2xl cursor-pointer hover:text-white"
-          >
-            Blog
-          </li>
-        </Link>
         <li
           onClick={showMenu}
-          className="text-2xl cursor-pointer hover:text-white"
+          className="text-2xl max-w-fit mx-auto cursor-pointer hover:text-white"
+        >
+          <Link href="/">Home</Link>
+        </li>
+        <li
+          onClick={showMenu}
+          className="text-2xl max-w-fit mx-auto cursor-pointer hover:text-white"
+        >
+          <Link href="/work">Work</Link>
+        </li>
+        <li
+          onClick={showMenu}
+          className="text-2xl max-w-fit mx-auto cursor-pointer hover:text-white"
+        >
+          <Link href="/blog">Blog</Link>
+        </li>
+        <li
+          onClick={showMenu}
+          className="text-2xl max-w-fit mx-auto cursor-pointer hover:text-white"
         >
           <a href="/files/resume.pdf" target="_blanket" rel="noopener">
             Résumé
