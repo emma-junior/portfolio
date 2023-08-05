@@ -1,10 +1,20 @@
 import React from "react";
+import Head from "next/head";
 import Header from "../components/Header";
 import Bio from "../components/Bio";
 
 const Layout = ({ children, home, active }) => {
+  const description =
+    "Hi, I'm Eze Emmanuel, your go-to Frontend Developer for creating solid and scalable frontend products with exceptional user experiences.";
   return (
     <React.Fragment>
+      <Head>
+        <meta name="author" content="Eze Emmanuel" />
+        <meta name="description" content={description} />
+        <meta property="og:description" content={description} />
+        <meta property="og:image" content="/thumbnail.png" />
+        <link rel="icon" href="/images/favicon.ico" />
+      </Head>
       <div
         className={`lg:h-full lg:overflow-hidden h-auto ${
           home ? "h-full" : ""
