@@ -11,7 +11,7 @@ const Navbar = ({ showMenu, hamBurger }) => {
   return (
     <div className="flex w-10/12 justify-between mx-auto h-16 items-center">
       <Link href="/">
-        <Image src={logo} width={120} height={40} alt="" />
+        <Image src={logo} width={100} height={30} alt="" />
       </Link>
       <p onClick={showMenu} className="cursor-pointer">
         <button
