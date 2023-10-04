@@ -5,7 +5,9 @@ import { FiShare2 } from "react-icons/fi";
 const MainCard = ({ project, boxheight }) => {
   return (
     <article
-      className={`bg-[#1b1b1d] ${boxheight} min-h-full flex flex-col justify-between my-3 lg:my-0 p-10 lg:even:translate-y-6 relative hover:z-10 cursor-default  hover:scale-105 transition duration-500 `}
+      className={`bg-[#1b1b1d] ${boxheight} min-h-full flex flex-col justify-between my-3 lg:my-0 p-10 ${
+        boxheight === "h-72" && "lg:even:translate-y-6"
+      } relative hover:z-10 cursor-default  hover:scale-105 transition duration-500 `}
     >
       <div>
         <h2 className="text-2xl font-semibold gradientText">{project.title}</h2>
@@ -25,14 +27,16 @@ const MainCard = ({ project, boxheight }) => {
         >
           <AiOutlineEye className="mr-1" /> Live
         </a>
-        <a
-          href={project.github}
-          target="_blank"
-          rel="noreferrer"
-          className="text-[#ccc5c5] flex h-5 items-center hover:text-white"
-        >
-          <FiShare2 className="mr-1" /> Code
-        </a>
+        {project.github && (
+          <a
+            href={project.github}
+            target="_blank"
+            rel="noreferrer"
+            className="text-[#ccc5c5] flex h-5 items-center hover:text-white"
+          >
+            <FiShare2 className="mr-1" /> Code
+          </a>
+        )}
       </div>
     </article>
   );
