@@ -4,6 +4,14 @@ import { FaAt } from "react-icons/fa";
 export const main = [
   {
     id: 1,
+    title: "Emken",
+    technologies: ["REACT", "TYPESCRIPT", "SASS"],
+    desc: "A Medical Emergency Application",
+    live: "https://emken.vercel.app/",
+    github: "",
+  },
+  {
+    id: 2,
     title: "SneakersVille",
     technologies: [
       "REACT",
@@ -15,15 +23,15 @@ export const main = [
     ],
     desc: "An Ecommerce App for sneakers",
     live: "https://sneakersvilleapp.vercel.app/",
-    github: "https://github.com/emma-junior/sneakersvilleapp",
+    github: "",
   },
   {
-    id: 2,
+    id: 3,
     title: "My Movie Box",
     technologies: ["REACT", "CONTEXT API"],
     desc: "A Movie app with various genre of movies",
     live: "https://mymoviebox.vercel.app/",
-    github: "https://github.com/emma-junior/Movie-App",
+    github: "",
   },
 ];
 
