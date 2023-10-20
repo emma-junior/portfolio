@@ -10,7 +10,7 @@ const MainCard = ({ project, boxheight }) => {
       } relative hover:z-10 cursor-default  hover:scale-105 transition duration-500 `}
     >
       <div>
-        <h2 className="text-2xl font-semibold gradientText">{project.title}</h2>
+        <h2 className="text-2xl font-semibold">{project.title}</h2>
         {project.technologies.map((techs, index) => (
           <span key={index} className="text-[#ccc5c5] text-[12px]">
             {techs} {index < project.technologies.length - 1 ? " + " : ""}
