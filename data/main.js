@@ -4,14 +4,22 @@ import { FaAt } from "react-icons/fa";
 export const main = [
   {
     id: 1,
-    title: "Emken",
-    technologies: ["REACT", "TYPESCRIPT", "SASS"],
-    desc: "A Medical Emergency Application",
-    live: "https://emken.vercel.app/",
+    title: "Afiari",
+    technologies: ["REACT", "TYPESCRIPT", "TAILWIND", "RTK"],
+    desc: "An Ecommerce App mainly on groceries",
+    live: "https://afiari.com/",
     github: "",
   },
   {
     id: 2,
+    title: "Emken",
+    technologies: ["REACT", "TYPESCRIPT", "SASS"],
+    desc: "A Medical Emergency Application",
+    live: "https://emken.vercel.app/",
+    github: "https://github.com/emma-junior/emken",
+  },
+  {
+    id: 3,
     title: "SneakersVille",
     technologies: [
       "REACT",
@@ -25,19 +33,27 @@ export const main = [
     live: "https://sneakersvilleapp.vercel.app/",
     github: "",
   },
+];
+
+export const others = [
   {
-    id: 3,
+    id: 1,
+    title: "Prince Oti",
+    technologies: ["REACT", "TYPESCRIPT", "SASS", "GSAP"],
+    desc: "Personal site for a lawyer, fintech expert and music minister",
+    live: "https://princeotiamarachukwu.com/",
+    github: "",
+  },
+  {
+    id: 2,
     title: "My Movie Box",
     technologies: ["REACT", "CONTEXT API"],
     desc: "A Movie app with various genre of movies",
     live: "https://mymoviebox.vercel.app/",
     github: "",
   },
-];
-
-export const others = [
   {
-    id: 1,
+    id: 3,
     title: "Drive",
     technologies: ["NEXTJS", "TYPESCRIPT", "SASS", "GSAP"],
     desc: "Landing page for a technological(Hardware) company",
@@ -45,28 +61,12 @@ export const others = [
     github: "https://github.com/emma-junior/drive",
   },
   {
-    id: 2,
-    title: "Dev Jobs",
-    technologies: ["NEXTJS", "TAILWIND", "CONTEXT API"],
-    desc: "An application where developers can find jobs with ease",
-    live: "https://dev-jobs-beta.vercel.app/",
-    github: "https://github.com/emma-junior/dev-jobs",
-  },
-  {
-    id: 3,
+    id: 4,
     title: "Trafalgar",
     technologies: ["REACT", "TAILWIND"],
     desc: "Landing page for a medical company",
     live: "https://trafalgar-services.netlify.app/",
-    github: "https://github.com/emma-junior/trafalgar",
-  },
-  {
-    id: 4,
-    title: "EmmaTechy",
-    technologies: ["NEXTJS", "TAILWIND", "GRAPHQL"],
-    desc: "My portfolio site",
-    live: "http://emmatechy.vercel.app/",
-    github: "https://github.com/emma-junior/portfolio",
+    github: "",
   },
 ];
 
