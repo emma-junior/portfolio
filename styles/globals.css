@@ -2,14 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-
 html,
 body {
   padding: 0;
   margin: 0;
   color: white;
   background: black;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
 }
 
 a {
@@ -46,65 +46,65 @@ body::-webkit-scrollbar {
   transform: translateY(-3px) rotate(-45deg);
 }
 
-
 @layer utilities {
+  /* THE STYLING FOR SHOWING AND CHANGING ACTIVE SECTION ON DESKSTOP E.G WORK, BLOG & RESUME */
   .sectionactive {
-    @apply text-white flex cursor-pointer  duration-200 ease-in 
+    @apply text-white flex cursor-pointer  duration-200 ease-in;
   }
   .section {
-    @apply text-[#777778] flex cursor-pointer max-w-fit hover:text-white duration-200 ease-in 
+    @apply text-[#777778] flex cursor-pointer max-w-fit hover:text-white duration-200 ease-in;
   }
   .line {
-    @apply h-[1px] bg-[#777778] w-12 my-auto mx-3 hover:bg-white transition-width
+    @apply h-[1px] bg-[#777778] w-12 my-auto mx-3 hover:bg-white transition-width;
   }
-    .sectionactive>.line {
-      @apply bg-white w-16 transition-width
-    }
+  .sectionactive > .line {
+    @apply bg-white w-16 transition-width;
+  }
   .section:hover > .line {
-    @apply bg-white w-16 transition-width
+    @apply bg-white w-16 transition-width;
   }
   .line:focus {
-    @apply bg-white w-16 
+    @apply bg-white w-16;
   }
-  .container {
-    @apply invisible
+
+  /* STYLING OPACITY WHEN A CARD IS HOVERED */
+  @media (min-width: 765px) {
+    .container:hover > :not(:hover) {
+      @apply opacity-50;
+    }
   }
-  .container>* {
-    @apply visible
-  }  
-  .container:hover> :not(:hover) {
-    @apply opacity-50
-  }
+
+  /* THE BLOG CONTENT STYLING */
   .content p {
     @apply text-[#777778] tracking-wide text-lg my-2 leading-loose;
   }
   .content h3 {
-    @apply text-2xl mt-10
+    @apply text-2xl mt-10;
   }
   .content pre {
-    @apply relative my-3 overflow-auto
+    @apply relative my-3 overflow-auto;
   }
   .content ol {
-    @apply py-2
+    @apply py-2;
   }
-  .content ol>li{
-    @apply py-2 list-decimal text-[#777778]
+  .content ol > li {
+    @apply py-2 list-decimal text-[#777778];
   }
   .content .copy-code {
-    @apply absolute bg-[#b3b3b34f] py-1 px-3 cursor-pointer rounded-md top-4 right-4
+    @apply absolute bg-[#b3b3b34f] py-1 px-3 cursor-pointer rounded-md top-4 right-4;
   }
 }
 
 @media (max-width: 1023px) {
-    .desk_layout {
-      display: none;
-    }
+  .desk_layout {
+    display: none;
+  }
 }
 
-
 /* Gradient text in bio */
-.gradientText { 
-  background-image: -webkit-linear-gradient(76deg,
+.gradientText {
+  background-image: -webkit-linear-gradient(
+    76deg,
     #fde1ff,
     #e0e7ff,
     #e0f9ff,
@@ -125,10 +125,11 @@ body::-webkit-scrollbar {
     #fffae9,
     #e8eaff,
     #ffe3f7,
-    #daf1ff);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	-webkit-animation: hue 10s infinite linear;
+    #daf1ff
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: hue 10s infinite linear;
   animation: hue 10s infinite linear;
   background-clip: text;
 }

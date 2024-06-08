@@ -7,7 +7,7 @@ const MainCard = ({ project, boxheight }) => {
     <article
       className={`bg-[#1b1b1d] ${boxheight} min-h-full flex flex-col justify-between my-3 lg:my-0 p-10 ${
         boxheight === "h-72" && "lg:even:translate-y-6"
-      } relative hover:z-10 cursor-default  hover:scale-105 transition duration-500 `}
+      } relative hover:z-10 cursor-default  lg:hover:scale-105 transition duration-500 `}
     >
       <div>
         <h2 className="text-2xl font-semibold">{project.title}</h2>
