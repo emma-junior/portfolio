@@ -27,21 +27,28 @@ export default articles;
 export async function getStaticProps() {
   try {
     const client = new ApolloClient({
-      uri: "https://api.hashnode.com/",
+      uri: "https://gql.hashnode.com/",
       cache: new InMemoryCache(),
     });
 
     const { data } = await client.query({
       query: gql`
         query GetUserArticles {
-          user(username: "emmanuel31") {
-            publication {
-              posts {
-                _id
-                title
-                dateAdded
-                slug
-                contentMarkdown
+          publication(host: "emmanuel-eze.hashnode.dev") {
+            title
+            posts(first: 10) {
+              edges {
+                node {
+                  id
+                  title
+                  brief
+                  slug
+                  publishedAt
+                  readTimeInMinutes
+                  content {
+                    markdown
+                  }
+                }
               }
             }
           }
@@ -51,13 +58,13 @@ export async function getStaticProps() {
 
     return {
       props: {
-        posts: data.user.publication.posts,
+        posts: data?.publication?.posts?.edges,
       },
     };
   } catch (error) {
     return {
       props: {
-        error: error.message,
+        error: error?.message,
       },
     };
   }
