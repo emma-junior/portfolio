@@ -8,17 +8,17 @@ import Link from "next/link";
 import Header from "../components/Header";
 import javascript from "highlight.js/lib/languages/javascript";
 import "highlight.js/styles/atom-one-dark.css";
-const readingTime = require("reading-time");
+// const readingTime = require("reading-time");
 
 const ArticleContent = ({ post }) => {
-  const dateString = post.dateAdded;
+  const dateString = post.publishedAt;
   const date = new Date(dateString);
   const options = {
     year: "numeric",
     month: "long",
     day: "numeric",
   };
-  const readtime = readingTime(post.contentMarkdown);
+  // const readtime = readingTime(post.contentMarkdown);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -67,11 +67,11 @@ const ArticleContent = ({ post }) => {
           </p>
           <p className="flex items-center text-sm">
             <BiTimeFive className="mr-1" />
-            {readtime.text}
+            {post?.readTimeInMinutes} min read
           </p>
         </div>
-        <h1 className="text-3xl mb-16">{post.title}.</h1>
-        <HashnodeContent content={post?.contentMarkdown} />
+        <h1 className="text-3xl mb-16">{post?.title}.</h1>
+        <HashnodeContent content={post?.content?.markdown} />
       </div>
     </>
   );
