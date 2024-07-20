@@ -23,9 +23,9 @@ const Bio = () => {
   }, []);
   const { dropdown } = useGlobalContext();
   return (
-    <div className="lg:mt-[70px] lg:ml-12 mb-10 lg:mb-0">
+    <div className="lg:mt-[70px] 2xl:mt-20 lg:ml-12 flex flex-col justify-between h-[87vh] 2xl:h-[90vh]">
       <div
-        className={`flex flex-col items-center justify-center md:h-[80vh] h-[70vh] lg:h-full ${
+        className={`flex flex-col items-center justify-center  ${
           dropdown ? "hidden" : "block"
         }`}
       >
@@ -33,27 +33,27 @@ const Bio = () => {
           <div className="lg:hidden w-32 mx-auto mt-16 mb-4 ">
             <Image className="rounded-full" src={me} alt="" />
           </div>
-          <h2 className="text-2xl font-bold text-center lg:text-left lg:text-[52px]  lg:font-monospace lg:leading-[50px]">
+          <h2 className="text-2xl font-bold text-center lg:text-left lg:text-[52px] 2xl:text-6xl  lg:font-monospace lg:leading-[50px]">
             Hello, I&apos;m Emmanuel Eze.
           </h2>
         </div>
         <div className="lg:pr-[5%] flex text-center lg:text-left md:px-10 px-4 lg:px-0 py-1 lg:py-0 ">
-          <p className="text-[#777778] lg:my-3 my-0 text-[15px]">
+          <p className="text-[#777778] lg:my-2 my-0 text-[15px] 2xl:text-xl">
             I&apos;m a{" "}
-            <span data-aos="zoom-in" className="gradientText text-[16px]">
+            <span data-aos="zoom-in" className="text-white">
               frontend developer
             </span>
             . I create interactive experiences for amazing people using
             modern&nbsp;
-            <span data-aos="zoom-in" className="gradientText text-[16px]">
+            <span data-aos="zoom-in" className="text-white">
               web technology
             </span>
             . I&apos;m currently learning how to write immersive web&nbsp;
-            <span data-aos="zoom-in" className="gradientText text-[16px]">
+            <span data-aos="zoom-in" className="text-white">
               animations
             </span>{" "}
             and also exploring&nbsp;
-            <span data-aos="zoom-in" className="gradientText text-[16px]">
+            <span data-aos="zoom-in" className="text-white">
               backend
             </span>{" "}
             development
@@ -67,7 +67,7 @@ const Bio = () => {
           </Link>
         </div>
       </div>
-      <div className="hidden lg:block space-y-5 my-12">
+      <div className="hidden lg:block space-y-5 ">
         <Section num="00" type="work" />
         <Section num="01" type="blog" />
         {/* <Section num="02" type="resume" /> */}
@@ -77,9 +77,9 @@ const Bio = () => {
           rel="noopener"
           className="section"
         >
-          <h2 className="text-xs">02</h2>
+          <h2 className="text-xs 2xl:text-xl">02</h2>
           <p className="line"></p>
-          <h2 className="text-xs">RÉSUMÉ</h2>
+          <h2 className="text-xs 2xl:text-xl">RÉSUMÉ</h2>
         </a>
         <div
           className="absolute left-3 w-[6px] h-[6px] bg-white rounded-full pointer-events-none z-20"
@@ -95,9 +95,6 @@ const Bio = () => {
       <div className="lg:hidden">
         <MobileSocials />
       </div>
-      <p className="text-[#777778] text-xs my-4 text-center lg:text-left">
-        Inspired by <span className="text-white">kadetXx</span>
-      </p>
     </div>
   );
 };

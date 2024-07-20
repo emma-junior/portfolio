@@ -6,17 +6,19 @@ const MainCard = ({ project, boxheight }) => {
   return (
     <article
       className={`bg-[#1b1b1d] ${boxheight} min-h-full flex flex-col justify-between my-3 lg:my-0 p-10 ${
-        boxheight === "h-72" && "lg:even:translate-y-6"
+        boxheight === "h-72 2xl:h-80" && "lg:even:translate-y-6"
       } relative hover:z-10 cursor-default  lg:hover:scale-105 transition duration-500 `}
     >
       <div>
         <h2 className="text-2xl font-semibold">{project.title}</h2>
         {project.technologies.map((techs, index) => (
-          <span key={index} className="text-[#ccc5c5] text-[12px]">
+          <span key={index} className="text-[#ccc5c5] text-[12px] 2xl:text-sm">
             {techs} {index < project.technologies.length - 1 ? " + " : ""}
           </span>
         ))}
-        <p className="text-[#777778] my-3 text-[15px]">{project.desc}</p>
+        <p className="text-[#777778] my-3 text-[15px] 2xl:text-xl">
+          {project.desc}
+        </p>
       </div>
       <div className="flex space-x-4">
         <a

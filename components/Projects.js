@@ -13,13 +13,21 @@ const Projects = () => {
       <p className="font-semibold text-[#777778] my-5">FEATURED</p>
       <div className="grid grid-cols-1 gap-3 container">
         {main.map((project) => (
-          <MainCard key={project.id} project={project} boxheight="h-52" />
+          <MainCard
+            key={project.id}
+            project={project}
+            boxheight="h-52 2xl:h-60"
+          />
         ))}
       </div>
       <p className="font-semibold text-[#777778] mt-12 mb-5">OTHERS</p>
       <div className="lg:grid grid-cols-2 gap-2 pb-36 container">
         {others.map((project) => (
-          <MainCard key={project.id} project={project} boxheight="h-72" />
+          <MainCard
+            key={project.id}
+            project={project}
+            boxheight="h-72 2xl:h-80"
+          />
         ))}
       </div>
     </div>
