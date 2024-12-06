@@ -32,7 +32,8 @@ const Socials = () => {
           href="mailto:emma.c.techy@gmail.com"
           className="text-[#ccc5c5] flex h-12 items-center text-xs 2xl:text-xl hover:text-white"
         >
-          @ Email <BsArrowUpRight className="ml-2" />
+          <p className="mr-1">@</p>
+          <p>Email</p> <BsArrowUpRight className="ml-2" />
         </a>
       </main>
       <p className="text-[#777778] text-xs 2xl:text-xl my-3 text-center lg:text-left">
