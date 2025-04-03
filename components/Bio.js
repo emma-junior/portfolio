@@ -89,7 +89,6 @@ const Bio = () => {
           }}
         ></div>
       </div>
-
       <div className="hidden lg:block">
         <Socials />
       </div>
