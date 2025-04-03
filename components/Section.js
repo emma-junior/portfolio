@@ -8,9 +8,9 @@ const Section = ({ num, type }) => {
     <>
       <Link href={`/${type}/`}>
         <div className={` ${active === type ? "sectionactive" : "section"}`}>
-          <h2 className="text-xs 2xl:text-xl">{num}</h2>
+          <h2 className="text-xs 2xl:text-lg">{num}</h2>
           <p className="line"></p>
-          <h2 className="text-xs 2xl:text-xl">{type.toUpperCase()}</h2>
+          <h2 className="text-xs 2xl:text-lg">{type.toUpperCase()}</h2>
         </div>
       </Link>
     </>

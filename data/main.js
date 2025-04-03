@@ -4,22 +4,41 @@ import { FaAt } from "react-icons/fa";
 export const main = [
   {
     id: 1,
-    title: "Afiari",
+    title: "Afiari Shop",
     technologies: ["REACT", "TYPESCRIPT", "TAILWIND", "RTK"],
-    desc: "An Ecommerce App mainly on groceries",
-    live: "https://afiari.com/",
+    desc: "An eCommerce app that allows different stores to sell their products.",
+    live: "https://shop.afiari.com/",
     github: "",
   },
   {
     id: 2,
-    title: "Emken",
-    technologies: ["REACT", "TYPESCRIPT", "SASS"],
-    desc: "A Medical Emergency Application",
-    live: "https://emken.vercel.app/",
-    github: "https://github.com/emma-junior/emken",
+    title: "Prince Oti",
+    technologies: ["REACT", "TYPESCRIPT", "SASS", "GSAP"],
+    desc: "Personal site for a lawyer, fintech expert and music minister",
+    live: "https://princeotiamarachukwu.com/",
+    github: "",
   },
   {
     id: 3,
+    title: "Udo Lagos",
+    technologies: ["REACT", "TYPESCRIPT", "TAILWIND", "RTK"],
+    desc: "An eCommerce platform for a fashion design business.",
+    live: "https://udolagos.ng/",
+    github: "",
+  },
+  {
+    id: 4,
+    title: "Afiari Business",
+    technologies: ["REACT", "SASS"],
+    desc: "An app that enables users to seamlessly register their businesses on Afiari.",
+    live: "https://business.afiari.com/",
+    github: "",
+  },
+];
+
+export const others = [
+  {
+    id: 1,
     title: "SneakersVille",
     technologies: [
       "REACT",
@@ -33,24 +52,13 @@ export const main = [
     live: "https://sneakersvilleapp.vercel.app/",
     github: "",
   },
-];
-
-export const others = [
-  {
-    id: 1,
-    title: "Prince Oti",
-    technologies: ["REACT", "TYPESCRIPT", "SASS", "GSAP"],
-    desc: "Personal site for a lawyer, fintech expert and music minister",
-    live: "https://princeotiamarachukwu.com/",
-    github: "",
-  },
   {
     id: 2,
-    title: "My Movie Box",
-    technologies: ["REACT", "CONTEXT API"],
-    desc: "A Movie app with various genre of movies",
-    live: "https://mymoviebox.vercel.app/",
-    github: "",
+    title: "Emken",
+    technologies: ["REACT", "TYPESCRIPT", "SASS"],
+    desc: "A Medical Emergency Application",
+    live: "https://emken.vercel.app/",
+    github: "https://github.com/emma-junior/emken",
   },
   {
     id: 3,
@@ -62,12 +70,20 @@ export const others = [
   },
   {
     id: 4,
-    title: "Trafalgar",
-    technologies: ["REACT", "TAILWIND"],
-    desc: "Landing page for a medical company",
-    live: "https://trafalgar-services.netlify.app/",
+    title: "My Movie Box",
+    technologies: ["REACT", "CONTEXT API"],
+    desc: "A Movie app with various genre of movies",
+    live: "https://mymoviebox.vercel.app/",
     github: "",
   },
+  // {
+  //   id: 4,
+  //   title: "Trafalgar",
+  //   technologies: ["REACT", "TAILWIND"],
+  //   desc: "Landing page for a medical company",
+  //   live: "https://trafalgar-services.netlify.app/",
+  //   github: "",
+  // },
 ];
 
 export const articles = [

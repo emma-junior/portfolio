@@ -16,7 +16,7 @@ const MainCard = ({ project, boxheight }) => {
             {techs} {index < project.technologies.length - 1 ? " + " : ""}
           </span>
         ))}
-        <p className="text-[#777778] my-3 text-[15px] 2xl:text-xl">
+        <p className="text-[#777778] my-3 text-[15px] 2xl:text-lg">
           {project.desc}
         </p>
       </div>
