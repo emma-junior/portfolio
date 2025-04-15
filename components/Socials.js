@@ -8,7 +8,13 @@ const Socials = () => {
     <>
       <main className="flex space-x-4">
         <div className="w-10">
-          <Image className="rounded-full" src={me} alt="" />
+          <Image
+            className="rounded-full object-cover"
+            height="50"
+            width="50"
+            src={me}
+            alt=""
+          />
         </div>
         <a
           href="https://github.com/emma-junior"

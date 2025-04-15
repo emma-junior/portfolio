@@ -31,7 +31,13 @@ const Bio = () => {
       >
         <div className="flex lg:items-center mb-1 lg:mb-5 flex-col">
           <div className="lg:hidden w-32 mx-auto mt-16 mb-4 ">
-            <Image className="rounded-full" src={me} alt="" />
+            <Image
+              className="rounded-full object-cover"
+              height="120"
+              width="120"
+              src={me}
+              alt="my picture"
+            />
           </div>
           <h2 className="text-2xl font-bold text-center lg:text-left lg:text-[52px] 2xl:text-5xl  lg:font-monospace lg:leading-[50px]">
             Hello, I&apos;m Emmanuel Eze.
