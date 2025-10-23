@@ -4,10 +4,10 @@ import { FaAt } from "react-icons/fa";
 export const main = [
   {
     id: 1,
-    title: "Afiari Shop",
-    technologies: ["REACT", "TYPESCRIPT", "TAILWIND", "RTK"],
-    desc: "An eCommerce app that allows different stores to sell their products.",
-    live: "https://shop.afiari.com/",
+    title: "Afiari",
+    technologies: ["REACT", "TYPESCRIPT", "TAILWIND"],
+    desc: "A responsive landing page and application that allows users to seamlessly register their businesses on Afiari.",
+    live: "https://afiari.com/",
     github: "",
   },
   {
@@ -20,18 +20,18 @@ export const main = [
   },
   {
     id: 3,
-    title: "Udo Lagos",
+    title: "Afiari Shop",
     technologies: ["REACT", "TYPESCRIPT", "TAILWIND", "RTK"],
-    desc: "An eCommerce platform for a fashion design business.",
-    live: "https://udolagos.ng/",
+    desc: "An eCommerce app that allows different stores to sell their products.",
+    live: "https://shop.afiari.com/",
     github: "",
   },
   {
     id: 4,
-    title: "Afiari Business",
-    technologies: ["REACT", "SASS"],
-    desc: "An app that enables users to seamlessly register their businesses on Afiari.",
-    live: "https://business.afiari.com/",
+    title: "Udo Lagos",
+    technologies: ["REACT", "TYPESCRIPT", "TAILWIND", "RTK"],
+    desc: "An eCommerce platform for a fashion design business.",
+    live: "https://udolagos.ng/",
     github: "",
   },
 ];
@@ -132,7 +132,7 @@ export const links = [
     icon: <BsGithub />,
   },
   {
-    url: "https://www.linkedin.com/in/eze-emmanuel-355897237",
+    url: "https://www.linkedin.com/in/eze-emmanuel-chibuike",
     icon: <BsLinkedin />,
   },
   {

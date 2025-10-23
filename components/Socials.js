@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import me from "../assets/photo.jpg";
 import { BsGithub, BsArrowUpRight, BsLinkedin } from "react-icons/bs";
@@ -26,7 +25,7 @@ const Socials = () => {
           <BsArrowUpRight className="ml-2" />
         </a>
         <a
-          href="https://www.linkedin.com/in/eze-emmanuel-355897237"
+          href="https://www.linkedin.com/in/eze-emmanuel-chibuike"
           target="_blank"
           rel="noreferrer"
           className="text-[#ccc5c5] flex h-12 items-center text-xs 2xl:text-lg hover:text-white"
