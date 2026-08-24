@@ -28,10 +28,10 @@ export const main = [
   },
   {
     id: 4,
-    title: "Udo Lagos",
-    technologies: ["REACT", "TYPESCRIPT", "TAILWIND", "RTK"],
-    desc: "An eCommerce platform for a fashion design business.",
-    live: "https://udolagos.ng/",
+    title: "HigherFeats Africa",
+    technologies: ["Next JS", "TYPESCRIPT", "TAILWIND"],
+    desc: "An educational platform providing tutoring, exam preparation, professional training, and learning resources for students, teachers, and institutions.",
+    live: "https://higherfeatsafrica.com/",
     github: "",
   },
 ];
