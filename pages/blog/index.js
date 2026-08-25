@@ -9,7 +9,7 @@ const articles = ({ posts, error }) => {
       <Head>
         <title>Frontend developer | Blog</title>
       </Head>
-      {!posts ? (
+      {/* {!posts ? (
         <div className="text-white h-[90vh] grid place-items-center">
           Loading...
         </div>
@@ -17,55 +17,60 @@ const articles = ({ posts, error }) => {
         <Layout>
           <MyArticles posts={posts} />
         </Layout>
-      )}
+      )} */}
+      <Layout>
+        <p className="text-white h-[90vh] grid place-items-center">
+          Page still under construction
+        </p>
+      </Layout>
     </>
   );
 };
 
 export default articles;
 
-export async function getStaticProps() {
-  try {
-    const client = new ApolloClient({
-      uri: "https://gql.hashnode.com/",
-      cache: new InMemoryCache(),
-    });
+// export async function getStaticProps() {
+//   try {
+//     const client = new ApolloClient({
+//       uri: "https://gql.hashnode.com/",
+//       cache: new InMemoryCache(),
+//     });
 
-    const { data } = await client.query({
-      query: gql`
-        query GetUserArticles {
-          publication(host: "emmanuel-eze.hashnode.dev") {
-            title
-            posts(first: 10) {
-              edges {
-                node {
-                  id
-                  title
-                  brief
-                  slug
-                  publishedAt
-                  readTimeInMinutes
-                  content {
-                    markdown
-                  }
-                }
-              }
-            }
-          }
-        }
-      `,
-    });
+//     const { data } = await client.query({
+//       query: gql`
+//         query GetUserArticles {
+//           publication(host: "emmanuel-eze.hashnode.dev") {
+//             title
+//             posts(first: 10) {
+//               edges {
+//                 node {
+//                   id
+//                   title
+//                   brief
+//                   slug
+//                   publishedAt
+//                   readTimeInMinutes
+//                   content {
+//                     markdown
+//                   }
+//                 }
+//               }
+//             }
+//           }
+//         }
+//       `,
+//     });
 
-    return {
-      props: {
-        posts: data?.publication?.posts?.edges,
-      },
-    };
-  } catch (error) {
-    return {
-      props: {
-        error: error?.message,
-      },
-    };
-  }
-}
+//     return {
+//       props: {
+//         posts: data?.publication?.posts?.edges,
+//       },
+//     };
+//   } catch (error) {
+//     return {
+//       props: {
+//         error: error?.message,
+//       },
+//     };
+//   }
+// }

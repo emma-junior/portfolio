@@ -75,7 +75,17 @@ const Bio = () => {
       </div>
       <div className="hidden lg:block space-y-5 ">
         <Section num="00" type="work" />
-        <Section num="01" type="blog" />
+        {/* <Section num="01" type="blog" /> */}
+        <a
+          href="https://emmanuel-eze.hashnode.dev/"
+          target="_blanket"
+          rel="noopener"
+          className="section"
+        >
+          <h2 className="text-xs 2xl:text-lg">01</h2>
+          <p className="line"></p>
+          <h2 className="text-xs 2xl:text-lg">BLOG</h2>
+        </a>
         {/* <Section num="02" type="resume" /> */}
         <a
           href="/files/resume.pdf"
